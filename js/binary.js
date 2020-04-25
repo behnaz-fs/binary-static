@@ -20021,8 +20021,8 @@ var commonTrading = function () {
 
     // Order
     var market_order = {
-        forex: 1,
-        synthetic_index: 2,
+        synthetic_index: 1,
+        forex: 2,
         indices: 3,
         stocks: 4,
         commodities: 5
@@ -20070,11 +20070,11 @@ var commonTrading = function () {
         if (tip) {
             var market = ActiveSymbols.getSymbols()[Defaults.get('underlying')].market;
             var map_to_section_id = {
+                synthetic_index: 'synthetic-indices',
                 forex: 'forex',
                 indices: 'indices',
                 stocks: 'otc-stocks-and-indices',
-                commodities: 'commodities',
-                synthetic_index: 'synthetic-indices'
+                commodities: 'commodities'
             };
             tip.setAttribute('href', urlFor('/get-started/binary-options', 'anchor=' + map_to_section_id[market] + '#range-of-markets'));
         }
