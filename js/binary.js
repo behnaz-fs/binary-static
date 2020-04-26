@@ -20021,8 +20021,8 @@ var commonTrading = function () {
 
     // Order
     var market_order = {
-        synthetic_index: 1,
-        forex: 2,
+        forex: 1,
+        synthetic_index: 2,
         indices: 3,
         stocks: 4,
         commodities: 5
@@ -20070,11 +20070,11 @@ var commonTrading = function () {
         if (tip) {
             var market = ActiveSymbols.getSymbols()[Defaults.get('underlying')].market;
             var map_to_section_id = {
-                synthetic_index: 'synthetic-indices',
                 forex: 'forex',
                 indices: 'indices',
                 stocks: 'otc-stocks-and-indices',
-                commodities: 'commodities'
+                commodities: 'commodities',
+                synthetic_index: 'synthetic-indices'
             };
             tip.setAttribute('href', urlFor('/get-started/binary-options', 'anchor=' + map_to_section_id[market] + '#range-of-markets'));
         }
@@ -23109,25 +23109,25 @@ var List = function List(_ref) {
 };
 
 var submarket_order = {
-    forex: 0,
-    major_pairs: 1,
-    minor_pairs: 2,
-    smart_fx: 3,
-    indices: 4,
-    asia_oceania: 5,
-    europe_africa: 6,
-    americas: 7,
-    otc_index: 8,
-    stocks: 9,
-    au_otc_stock: 10,
-    ge_otc_stock: 11,
-    india_otc_stock: 12,
-    uk_otc_stock: 13,
-    us_otc_stock: 14,
-    commodities: 15,
-    metals: 16,
-    energy: 17,
-    synthetic_index: 18,
+    synthetic_index: 0,
+    forex: 1,
+    major_pairs: 2,
+    minor_pairs: 3,
+    smart_fx: 4,
+    indices: 5,
+    asia_oceania: 6,
+    europe_africa: 7,
+    americas: 8,
+    otc_index: 9,
+    stocks: 10,
+    au_otc_stock: 11,
+    ge_otc_stock: 12,
+    india_otc_stock: 13,
+    uk_otc_stock: 14,
+    us_otc_stock: 15,
+    commodities: 16,
+    metals: 17,
+    energy: 18,
     random_index: 19,
     random_daily: 20,
     random_nightly: 21
