@@ -20021,8 +20021,8 @@ var commonTrading = function () {
 
     // Order
     var market_order = {
-        forex: 1,
-        synthetic_index: 2,
+        synthetic_index: 1,
+        forex: 2,
         indices: 3,
         stocks: 4,
         commodities: 5
@@ -20070,11 +20070,12 @@ var commonTrading = function () {
         if (tip) {
             var market = ActiveSymbols.getSymbols()[Defaults.get('underlying')].market;
             var map_to_section_id = {
+
+                synthetic_index: 'synthetic-indices',
                 forex: 'forex',
                 indices: 'indices',
                 stocks: 'otc-stocks-and-indices',
-                commodities: 'commodities',
-                synthetic_index: 'synthetic-indices'
+                commodities: 'commodities'
             };
             tip.setAttribute('href', urlFor('/get-started/binary-options', 'anchor=' + map_to_section_id[market] + '#range-of-markets'));
         }
@@ -23110,27 +23111,27 @@ var List = function List(_ref) {
 
 var submarket_order = {
     synthetic_index: 0,
-    forex: 1,
-    major_pairs: 2,
-    minor_pairs: 3,
-    smart_fx: 4,
-    indices: 5,
-    asia_oceania: 6,
-    europe_africa: 7,
-    americas: 8,
-    otc_index: 9,
-    stocks: 10,
-    au_otc_stock: 11,
-    ge_otc_stock: 12,
-    india_otc_stock: 13,
-    uk_otc_stock: 14,
-    us_otc_stock: 15,
-    commodities: 16,
-    metals: 17,
-    energy: 18,
-    random_index: 19,
-    random_daily: 20,
-    random_nightly: 21
+    random_index: 1,
+    random_daily: 2,
+    random_nightly: 3,
+    forex: 4,
+    major_pairs: 5,
+    minor_pairs: 6,
+    smart_fx: 7,
+    indices: 8,
+    asia_oceania: 9,
+    europe_africa: 10,
+    americas: 11,
+    otc_index: 12,
+    stocks: 13,
+    au_otc_stock: 14,
+    ge_otc_stock: 15,
+    india_otc_stock: 16,
+    uk_otc_stock: 17,
+    us_otc_stock: 18,
+    commodities: 19,
+    metals: 20,
+    energy: 21
 };
 
 var submarketSort = function submarketSort(a, b) {
@@ -23398,7 +23399,7 @@ var Markets = (_temp = _class = function (_React$Component) {
                 key = _ref13[0],
                 node = _ref13[1];
 
-            if (node && node.offsetParent && node.offsetTop - 41 <= position) {
+            if (node && node.offsetParent && node.offsetTop - 100 <= position) {
                 arr.push(key);
             }
         });

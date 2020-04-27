@@ -2495,7 +2495,7 @@ tbody#instruments > tr > td {
                   flex: 0 0 auto;
           padding-bottom: 40px; }
           .markets .markets_dropdown .markets_view .list .market:last-of-type {
-            padding-bottom: 80px; }
+            padding-bottom: 150px; }
           .markets .markets_dropdown .markets_view .list .market .market_name {
             font-size: 18px;
             padding: 10px 0;
