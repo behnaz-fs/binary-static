@@ -1282,11 +1282,15 @@ var urlForCurrentDomain = __webpack_require__(/*! ../url */ "./src/javascript/_c
 var isLoginPages = __webpack_require__(/*! ../utility */ "./src/javascript/_common/utility.js").isLoginPages;
 var TrafficSource = __webpack_require__(/*! ../../app/common/traffic_source */ "./src/javascript/app/common/traffic_source.js");
 var getAppId = __webpack_require__(/*! ../../config */ "./src/javascript/config.js").getAppId;
+var Url = __webpack_require__(/*! ../../../javascript/_common/url */ "./src/javascript/_common/url.js");
 
 var Login = function () {
     var redirectToLogin = function redirectToLogin() {
         if (!Client.isLoggedIn() && !isLoginPages() && isStorageSupported(sessionStorage)) {
-            sessionStorage.setItem('redirect_url', window.location.href);
+            var params = Url.paramsHash();
+            delete params.market;
+            delete params.underlying;
+            sessionStorage.setItem('redirect_url', Url.urlFor(window.location.pathname, Url.paramsHashToString(params)));
             window.location.href = loginUrl();
         }
     };
@@ -10858,6 +10862,7 @@ var Header = function () {
 
     var loginOnClick = function loginOnClick(e) {
         e.preventDefault();
+        window.sessionStorage.clear();
         Login.redirectToLogin();
     };
 
