@@ -1290,7 +1290,7 @@ var Login = function () {
             var params = Url.paramsHash();
             delete params.market;
             delete params.underlying;
-            sessionStorage.setItem('redirect_url', Url.urlFor(window.location.pathname, Url.paramsHashToString(params)));
+            sessionStorage.setItem('redirect_url', Url.urlFor(Url.getSection(), Url.paramsHashToString(params)));
             window.location.href = loginUrl();
         }
     };
@@ -10818,6 +10818,7 @@ var applyToAllElements = __webpack_require__(/*! ../../_common/utility */ "./src
 var createElement = __webpack_require__(/*! ../../_common/utility */ "./src/javascript/_common/utility.js").createElement;
 var findParent = __webpack_require__(/*! ../../_common/utility */ "./src/javascript/_common/utility.js").findParent;
 var template = __webpack_require__(/*! ../../_common/utility */ "./src/javascript/_common/utility.js").template;
+var Defaults = __webpack_require__(/*! ../../app/pages/trade/defaults */ "./src/javascript/app/pages/trade/defaults.js");
 
 var Header = function () {
     var onLoad = function onLoad() {
@@ -10862,11 +10863,12 @@ var Header = function () {
 
     var loginOnClick = function loginOnClick(e) {
         e.preventDefault();
-        window.sessionStorage.clear();
+        Defaults.remove('market', 'underlying');
         Login.redirectToLogin();
     };
 
     var logoutOnClick = function logoutOnClick() {
+        Defaults.remove('market', 'underlying');
         Client.sendLogoutRequest();
     };
 
