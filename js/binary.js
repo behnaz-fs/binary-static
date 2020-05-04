@@ -1278,11 +1278,10 @@ var getLanguage = __webpack_require__(/*! ../language */ "./src/javascript/_comm
 var isMobile = __webpack_require__(/*! ../os_detect */ "./src/javascript/_common/os_detect.js").isMobile;
 var isStorageSupported = __webpack_require__(/*! ../storage */ "./src/javascript/_common/storage.js").isStorageSupported;
 var LocalStore = __webpack_require__(/*! ../storage */ "./src/javascript/_common/storage.js").LocalStore;
-var urlForCurrentDomain = __webpack_require__(/*! ../url */ "./src/javascript/_common/url.js").urlForCurrentDomain;
+var Url = __webpack_require__(/*! ../url */ "./src/javascript/_common/url.js");
 var isLoginPages = __webpack_require__(/*! ../utility */ "./src/javascript/_common/utility.js").isLoginPages;
 var TrafficSource = __webpack_require__(/*! ../../app/common/traffic_source */ "./src/javascript/app/common/traffic_source.js");
 var getAppId = __webpack_require__(/*! ../../config */ "./src/javascript/config.js").getAppId;
-var Url = __webpack_require__(/*! ../../../javascript/_common/url */ "./src/javascript/_common/url.js");
 
 var Login = function () {
     var redirectToLogin = function redirectToLogin() {
@@ -1302,7 +1301,7 @@ var Login = function () {
         var date_first_contact = LocalStore.get('date_first_contact');
         var marketing_queries = '&signup_device=' + signup_device + (date_first_contact ? '&date_first_contact=' + date_first_contact : '');
 
-        return server_url && /qa/.test(server_url) ? 'https://' + server_url + '/oauth2/authorize?app_id=' + getAppId() + '&l=' + language + marketing_queries : urlForCurrentDomain('https://oauth.binary.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + language + marketing_queries);
+        return server_url && /qa/.test(server_url) ? 'https://' + server_url + '/oauth2/authorize?app_id=' + getAppId() + '&l=' + language + marketing_queries : Url.urlForCurrentDomain('https://oauth.binary.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + language + marketing_queries);
     };
 
     var socialLoginUrl = function socialLoginUrl(brand, affiliate_token, utm_source, utm_medium, utm_campaign) {
@@ -10861,14 +10860,19 @@ var Header = function () {
         }
     };
 
+    // To clear trade parameters by removing market/underlying from url
+    var clearTradeParams = function clearTradeParams() {
+        Defaults.remove('market', 'underlying');
+    };
+
     var loginOnClick = function loginOnClick(e) {
         e.preventDefault();
-        Defaults.remove('market', 'underlying');
+        clearTradeParams();
         Login.redirectToLogin();
     };
 
     var logoutOnClick = function logoutOnClick() {
-        Defaults.remove('market', 'underlying');
+        clearTradeParams();
         Client.sendLogoutRequest();
     };
 
@@ -20077,7 +20081,6 @@ var commonTrading = function () {
         if (tip) {
             var market = ActiveSymbols.getSymbols()[Defaults.get('underlying')].market;
             var map_to_section_id = {
-
                 synthetic_index: 'synthetic-indices',
                 forex: 'forex',
                 indices: 'indices',
