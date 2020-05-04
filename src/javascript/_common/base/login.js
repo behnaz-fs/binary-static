@@ -4,13 +4,10 @@ const getLanguage         = require('../language').get;
 const isMobile            = require('../os_detect').isMobile;
 const isStorageSupported  = require('../storage').isStorageSupported;
 const LocalStore          = require('../storage').LocalStore;
-const urlForCurrentDomain = require('../url').urlForCurrentDomain;
+const Url                 = require('../url');
 const isLoginPages        = require('../utility').isLoginPages;
 const TrafficSource       = require('../../app/common/traffic_source');
 const getAppId            = require('../../config').getAppId;
-//const Url                 = require('../../../javascript/_common/url');
-const Url                 = require('../url').Url
-//const Url                 = Url.urlForCurrentDomain
 
 const Login = (() => {
     const redirectToLogin = () => {
@@ -32,7 +29,7 @@ const Login = (() => {
 
         return ((server_url && /qa/.test(server_url)) ?
             `https://${server_url}/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}` :
-            urlForCurrentDomain(`https://oauth.binary.com/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}`)
+            Url.urlForCurrentDomain(`https://oauth.binary.com/oauth2/authorize?app_id=${getAppId()}&l=${language}${marketing_queries}`)
         );
     };
 

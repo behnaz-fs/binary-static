@@ -61,10 +61,11 @@ const Header = (() => {
             BinaryPjax.load(Url.urlFor(''));
         }
     };
-//to clear trade parameters by removing market/underlying from url
+
+    // To clear trade parameters by removing market/underlying from url
     const clearTradeParams = ()=> {
         Defaults.remove('market', 'underlying');
-    }
+    };
 
     const loginOnClick = (e) => {
         e.preventDefault();
