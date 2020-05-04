@@ -314,7 +314,6 @@ const commonTrading = (() => {
         if (tip) {
             const market = ActiveSymbols.getSymbols()[Defaults.get('underlying')].market;
             const map_to_section_id = {
-
                 synthetic_index: 'synthetic-indices',
                 forex          : 'forex',
                 indices        : 'indices',
