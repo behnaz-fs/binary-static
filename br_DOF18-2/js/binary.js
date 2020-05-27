@@ -12100,7 +12100,6 @@ var AccountOpening = function () {
     var populateForm = function populateForm(form_id, getValidations, is_financial) {
         getResidence(form_id, getValidations);
         handleTaxIdentificationNumber();
-        generateBirthDate();
         var landing_company = State.getResponse('landing_company');
         var lc_to_upgrade_to = landing_company[is_financial ? 'financial_company' : 'gaming_company'] || landing_company.financial_company;
         CommonFunctions.elementTextContent(CommonFunctions.getElementById('lc-name'), lc_to_upgrade_to.name);
@@ -12108,6 +12107,7 @@ var AccountOpening = function () {
         if (getPropertyValue(landing_company, ['financial_company', 'shortcode']) === 'maltainvest') {
             professionalClient.init(is_financial, false);
         }
+        generateBirthDate(landing_company.minimum_age);
     };
 
     var getResidence = function getResidence(form_id, getValidations) {
@@ -12527,14 +12527,14 @@ var DatePicker = __webpack_require__(/*! ../../components/date_picker */ "./src/
 var dateValueChanged = __webpack_require__(/*! ../../../_common/common_functions */ "./src/javascript/_common/common_functions.js").dateValueChanged;
 var toISOFormat = __webpack_require__(/*! ../../../_common/string_util */ "./src/javascript/_common/string_util.js").toISOFormat;
 
-var generateBirthDate = function generateBirthDate() {
+var generateBirthDate = function generateBirthDate(min_age) {
     var date_of_birth = '#date_of_birth';
 
     if (!$(date_of_birth).val()) {
         DatePicker.init({
             selector: date_of_birth,
             minDate: -100 * 365,
-            maxDate: -18 * 365 - 5,
+            maxDate: -min_age * 365 - 5,
             yearRange: '-100:-18'
         });
         $(date_of_birth).attr('data-value', toISOFormat(moment())).change(function () {
