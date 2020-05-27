@@ -12534,7 +12534,7 @@ var generateBirthDate = function generateBirthDate(min_age) {
         DatePicker.init({
             selector: date_of_birth,
             minDate: -100 * 365,
-            maxDate: -min_age * 365 - 5,
+            maxDate: -min_age * 365 - Math.trunc(min_age / 4) - 1,
             yearRange: '-100:-18'
         });
         $(date_of_birth).attr('data-value', toISOFormat(moment())).change(function () {
