@@ -1659,8 +1659,14 @@ table {
 .table-container .w-80 {
   width: 80px; }
 
-.table-container .w-270 {
-  width: 270px; }
+.table-container .w-262 {
+  width: 262px; }
+
+.table-container .w-148 {
+  width: 148px; }
+
+.table-container .w-112 {
+  width: 112px; }
 
 .table-container tr div .td {
   display: table-cell; }
