@@ -1392,7 +1392,7 @@ label + input {
     font-size: 0.8695652174rem;
     margin-bottom: 0; }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 890px) {
   #footer .icon-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
