@@ -132,7 +132,7 @@ const Footer = () => (
                                 </a>
                             </div>
                             <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='100%' data-theme='dark'>
-                                <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener'>Trustpilot</a>
+                                <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                             </div>
                             <SocialIcons
                                 networks={[
@@ -188,7 +188,7 @@ const Footer = () => (
                                 </div>
                             </div>
                             <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='100%' data-theme='dark'>
-                                <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener'>Trustpilot</a>
+                                <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                             </div>
                             <SocialIcons
                                 networks={[
