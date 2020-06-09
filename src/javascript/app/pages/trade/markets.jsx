@@ -101,11 +101,21 @@ const submarketSort = (a, b) => {
 class Markets extends React.Component {
     constructor (props) {
         super(props);
-        let market_symbol = Defaults.get('market');
+        let market_symbol;
+        if (localStorage.getItem('selected_market')) {
+            market_symbol = localStorage.getItem('selected_market');
+        } else {
+            market_symbol = Defaults.get('market');
+        }
         this.markets = Symbols.markets();
 
         this.underlyings = Symbols.getAllSymbols() || {};
-        let underlying_symbol = Defaults.get('underlying');
+        let underlying_symbol;
+        if (localStorage.getItem('selected_underlying')) {
+            underlying_symbol = localStorage.getItem('selected_underlying');
+        } else {
+            underlying_symbol = Defaults.get('underlying');
+        }
         if (!underlying_symbol || !this.underlyings[underlying_symbol]) {
             const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(submarketSort)[0];
             underlying_symbol = Object.keys(this.markets[market_symbol].submarkets[submarket].symbols).sort()[0];
@@ -231,7 +241,9 @@ class Markets extends React.Component {
 
     onUnderlyingClick = (underlying_symbol, market_symbol) => {
         Defaults.set('underlying', underlying_symbol);
+        localStorage.setItem('selected_underlying', underlying_symbol);
         Defaults.set('market', market_symbol);
+        localStorage.setItem('selected_market', market_symbol);
 
         this.setState({
             market: {
