@@ -131,7 +131,7 @@ const Footer = () => (
                                     <img className='responsive' src={it.url_for('images/pages/footer/labuan_FSA.svg')} />
                                 </a>
                             </div>
-                            <div className='trustpilot-widget gr-centered' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='300px' data-theme='dark'>
+                            <div className='trustpilot-widget gr-centered' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='100%' data-theme='dark'>
                                 <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                             </div>
                             <SocialIcons
@@ -187,7 +187,7 @@ const Footer = () => (
                                     <img className='responsive' src={it.url_for('images/pages/footer/18+.svg')} />
                                 </div>
                             </div>
-                            <div className='trustpilot-widget gr-centered' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='300px' data-theme='dark'>
+                            <div className='trustpilot-widget gr-centered' data-locale='en-US' data-template-id='5419b732fbfb950b10de65e5' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='24px' data-style-width='100%' data-theme='dark'>
                                 <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                             </div>
                             <SocialIcons
