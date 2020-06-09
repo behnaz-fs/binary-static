@@ -101,7 +101,7 @@ const submarketSort = (a, b) => {
 class Markets extends React.Component {
     constructor (props) {
         super(props);
-        let market_symbol;
+        let market_symbol,underlying_symbol;
         if (localStorage.getItem('selected_market')) {
             market_symbol = localStorage.getItem('selected_market');
         } else {
@@ -110,7 +110,6 @@ class Markets extends React.Component {
         this.markets = Symbols.markets();
 
         this.underlyings = Symbols.getAllSymbols() || {};
-        let underlying_symbol;
         if (localStorage.getItem('selected_underlying')) {
             underlying_symbol = localStorage.getItem('selected_underlying');
         } else {
