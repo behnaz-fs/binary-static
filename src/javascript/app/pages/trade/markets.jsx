@@ -114,7 +114,6 @@ class Markets extends React.Component {
         if (localStorage.getItem(`${login_id}_selected_underlying`) && login_id) {
             underlying_symbol = localStorage.getItem(`${login_id}_selected_underlying`);
         }
-        }
         if (!underlying_symbol || !this.underlyings[underlying_symbol]) {
             const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(submarketSort)[0];
             underlying_symbol = Object.keys(this.markets[market_symbol].submarkets[submarket].symbols).sort()[0];
@@ -241,7 +240,7 @@ class Markets extends React.Component {
     onUnderlyingClick = (underlying_symbol, market_symbol) => {
 
         const login_id = localStorage.getItem('active_loginid');
-        if(login_id){
+        if (login_id) {
             localStorage.setItem(`${login_id}_selected_underlying`,underlying_symbol);
             localStorage.setItem(`${login_id}_selected_market`, market_symbol);
         } else {
