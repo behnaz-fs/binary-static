@@ -23234,15 +23234,16 @@ var Markets = (_temp = _class = function (_React$Component) {
 
         var market_symbol = void 0,
             underlying_symbol = void 0;
-        if (localStorage.getItem('selected_market')) {
-            market_symbol = localStorage.getItem('selected_market');
+        var login_id = localStorage.getItem('active_loginid');
+        if (localStorage.getItem(login_id + '_selected_market') && login_id) {
+            market_symbol = localStorage.getItem(login_id + '_selected_market');
         } else {
             market_symbol = _defaults2.default.get('market');
         }
         _this.markets = _symbols2.default.markets();
 
         _this.underlyings = _symbols2.default.getAllSymbols() || {};
-        if (localStorage.getItem('selected_underlying')) {
+        if (localStorage.getItem(login_id + '_selected_underlying') && login_id) {
             underlying_symbol = localStorage.getItem('selected_underlying');
         } else {
             underlying_symbol = _defaults2.default.get('underlying');
@@ -23540,11 +23541,11 @@ var Markets = (_temp = _class = function (_React$Component) {
         _this2.openScrollMonitor(scrollable);
     };
 
-    this.onUnderlyingClick = function (underlying_symbol, market_symbol) {
+    this.onUnderlyingClick = function (underlying_symbol, market_symbol, login_id) {
         _defaults2.default.set('underlying', underlying_symbol);
-        localStorage.setItem('selected_underlying', underlying_symbol);
         _defaults2.default.set('market', market_symbol);
-        localStorage.setItem('selected_market', market_symbol);
+        localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
+        localStorage.setItem(login_id + '_selected_market', market_symbol);
 
         _this2.setState({
             market: {
