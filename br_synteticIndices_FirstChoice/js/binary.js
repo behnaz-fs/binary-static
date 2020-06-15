@@ -23244,9 +23244,7 @@ var Markets = (_temp = _class = function (_React$Component) {
 
         _this.underlyings = _symbols2.default.getAllSymbols() || {};
         if (localStorage.getItem(login_id + '_selected_underlying') && login_id) {
-            underlying_symbol = localStorage.getItem('selected_underlying');
-        } else {
-            underlying_symbol = _defaults2.default.get('underlying');
+            underlying_symbol = localStorage.getItem(login_id + '_selected_underlying');
         }
         if (!underlying_symbol || !_this.underlyings[underlying_symbol]) {
             var submarket = Object.keys(_this.markets[market_symbol].submarkets).sort(submarketSort)[0];
@@ -23541,12 +23539,16 @@ var Markets = (_temp = _class = function (_React$Component) {
         _this2.openScrollMonitor(scrollable);
     };
 
-    this.onUnderlyingClick = function (underlying_symbol, market_symbol, login_id) {
-        _defaults2.default.set('underlying', underlying_symbol);
-        _defaults2.default.set('market', market_symbol);
-        localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
-        localStorage.setItem(login_id + '_selected_market', market_symbol);
+    this.onUnderlyingClick = function (underlying_symbol, market_symbol) {
 
+        var login_id = localStorage.getItem('active_loginid');
+        if (login_id) {
+            localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
+            localStorage.setItem(login_id + '_selected_market', market_symbol);
+        } else {
+            _defaults2.default.set('underlying', underlying_symbol);
+            _defaults2.default.set('market', market_symbol);
+        }
         _this2.setState({
             market: {
                 symbol: market_symbol,
