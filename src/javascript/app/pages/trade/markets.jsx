@@ -102,18 +102,18 @@ class Markets extends React.Component {
     constructor (props) {
         super(props);
         let market_symbol,underlying_symbol;
-        if (localStorage.getItem('selected_market')) {
-            market_symbol = localStorage.getItem('selected_market');
+        const login_id = localStorage.getItem('active_loginid');
+        if (localStorage.getItem(`${login_id}_selected_market`) && login_id) {
+            market_symbol = localStorage.getItem(`${login_id}_selected_market`);
         } else {
             market_symbol = Defaults.get('market');
         }
         this.markets = Symbols.markets();
 
         this.underlyings = Symbols.getAllSymbols() || {};
-        if (localStorage.getItem('selected_underlying')) {
-            underlying_symbol = localStorage.getItem('selected_underlying');
-        } else {
-            underlying_symbol = Defaults.get('underlying');
+        if (localStorage.getItem(`${login_id}_selected_underlying`) && login_id) {
+            underlying_symbol = localStorage.getItem(`${login_id}_selected_underlying`);
+        }
         }
         if (!underlying_symbol || !this.underlyings[underlying_symbol]) {
             const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(submarketSort)[0];
@@ -239,11 +239,15 @@ class Markets extends React.Component {
     };
 
     onUnderlyingClick = (underlying_symbol, market_symbol) => {
-        Defaults.set('underlying', underlying_symbol);
-        localStorage.setItem('selected_underlying', underlying_symbol);
-        Defaults.set('market', market_symbol);
-        localStorage.setItem('selected_market', market_symbol);
 
+        const login_id = localStorage.getItem('active_loginid');
+        if(login_id){
+            localStorage.setItem(`${login_id}_selected_underlying`,underlying_symbol);
+            localStorage.setItem(`${login_id}_selected_market`, market_symbol);
+        } else {
+            Defaults.set('underlying', underlying_symbol);
+            Defaults.set('market', market_symbol);
+        }
         this.setState({
             market: {
                 symbol: market_symbol,
