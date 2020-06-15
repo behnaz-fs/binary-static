@@ -255,6 +255,7 @@ const Header = (() => {
         BinarySocket.wait('get_account_status', 'authorize', 'landing_company').then(() => {
             let authentication,
                 get_account_status,
+                is_fully_authenticated,
                 status;
             const is_svg          = Client.get('landing_company_shortcode') === 'svg';
             const loginid         = Client.get('loginid') || {};
@@ -281,7 +282,8 @@ const Header = (() => {
                     ] : [];
 
                 const get_settings = State.getResponse('get_settings');
-                return required_fields.some(field => !get_settings[field]);
+                // date_of_birth can be 0 as a valid epoch, so we should only check missing values, '', null, or undefined
+                return required_fields.some(field => !(field in get_settings) || get_settings[field] === '' || get_settings[field] === null || get_settings[field] === undefined);
             };
 
             const buildMessage = (string, path, hash = '') => template(string, [`<a href="${Url.urlFor(path)}${hash}">`, '</a>']);
@@ -349,7 +351,7 @@ const Header = (() => {
                 expired_identity        : () => buildMessage(localizeKeepPlaceholders('Your [_1]proof of identity[_2] has expired.'),                                                                                         'user/authenticate'),
                 expired_document        : () => buildMessage(localizeKeepPlaceholders('Your [_1]proof of address[_2] has expired.'),                                                                                          'user/authenticate', '?authentication_tab=poa'),
                 rejected                : () => buildSpecificMessage(localizeKeepPlaceholders('Your [_1]proof of identity[_3] and [_2]proof of address[_3] have not been verified. Please check your email for details.'),    [`<a href='${Url.urlFor('user/authenticate')}'>`, `<a href='${Url.urlFor('user/authenticate')}?authentication_tab=poa'>`, '</a>']),
-                rejected_identity       : () => buildMessage(localizeKeepPlaceholders('Your [_1]proof of identity[_2] has not been verified. Please check your email for details.'),                                          'user/authenticate'),
+                rejected_identity       : () => buildMessage(localizeKeepPlaceholders('Your [_1]proof of identity[_2] has not been verified.'),                                                                               'user/authenticate'),
                 rejected_document       : () => buildMessage(localizeKeepPlaceholders('Your [_1]proof of address[_2] has not been verified. Please check your email for details.'),                                           'user/authenticate', '?authentication_tab=poa'),
                 identity                : () => buildMessage(localizeKeepPlaceholders('Please submit your [_1]proof of identity[_2].'),                                                                                       'user/authenticate'),
                 document                : () => buildMessage(localizeKeepPlaceholders('Please submit your [_1]proof of address[_2].'),                                                                                        'user/authenticate', '?authentication_tab=poa'),
@@ -362,6 +364,7 @@ const Header = (() => {
                 risk                    : () => buildMessage(localizeKeepPlaceholders('Please complete the [_1]financial assessment form[_2] to lift your withdrawal and trading limits.'),                                   'user/settings/assessmentws'),
                 tax                     : () => buildMessage(localizeKeepPlaceholders('Please [_1]complete your account profile[_2] to lift your withdrawal and trading limits.'),                                            'user/settings/detailsws'),
                 unwelcome               : () => buildMessage(localizeKeepPlaceholders('Trading and deposits have been disabled on your account. Kindly [_1]contact customer support[_2] for assistance.'),                    'contact'),
+                withdrawal_locked_review: () => localize('Withdrawals have been disabled on your account. Please wait until your uploaded documents are verified.'),
                 withdrawal_locked       : () => localize('Withdrawals have been disabled on your account. Please check your email for more details.'),
                 tnc                     : () => buildMessage(has_no_tnc_limit
                     ? localizeKeepPlaceholders('Please [_1]accept the updated Terms and Conditions[_2].')
@@ -390,6 +393,7 @@ const Header = (() => {
                 tax                     : () => Client.shouldCompleteTax(),
                 tnc                     : () => Client.shouldAcceptTnc(),
                 unwelcome               : () => hasStatus('unwelcome'),
+                withdrawal_locked_review: () => hasStatus('withdrawal_locked') && get_account_status.risk_classification === 'high' && !is_fully_authenticated && authentication.document.status === 'pending',
                 withdrawal_locked       : () => hasStatus('withdrawal_locked'),
             };
 
@@ -402,30 +406,6 @@ const Header = (() => {
                 'risk',
                 'tax',
                 'currency',
-                'cashier_locked',
-                'withdrawal_locked',
-                'mt5_withdrawal_locked',
-                'unwelcome',
-                'no_withdrawal_or_trading',
-                'unsubmitted',
-                'expired',
-                'expired_identity',
-                'expired_document',
-                'rejected',
-                'rejected_identity',
-                'rejected_document',
-                'identity',
-                'document',
-            ];
-
-            const check_statuses_mf_mlt = [
-                'excluded_until',
-                'tnc',
-                'required_fields',
-                'financial_limit',
-                'risk',
-                'tax',
-                'currency',
                 'unsubmitted',
                 'expired',
                 'expired_identity',
@@ -438,6 +418,7 @@ const Header = (() => {
                 'unwelcome',
                 'no_withdrawal_or_trading',
                 'cashier_locked',
+                'withdrawal_locked_review',
                 'withdrawal_locked',
                 'mt5_withdrawal_locked',
             ];
@@ -466,12 +447,8 @@ const Header = (() => {
                     authentication = State.getResponse('get_account_status.authentication') || {};
                     get_account_status = State.getResponse('get_account_status') || {};
                     status             = get_account_status.status;
-                    if (Client.get('landing_company_shortcode') === 'maltainvest' || Client.get('landing_company_shortcode') === 'malta' || Client.get('landing_company_shortcode') === 'iom') {
-                        checkStatus(check_statuses_mf_mlt);
-                    } else {
-                        checkStatus(check_statuses_real);
-                    }
-                    const is_fully_authenticated = hasStatus('authenticated') && !+get_account_status.prompt_client_to_authenticate;
+                    checkStatus(check_statuses_real);
+                    is_fully_authenticated = hasStatus('authenticated') && !+get_account_status.prompt_client_to_authenticate;
                     $('.account-id')[is_fully_authenticated ? 'append' : 'remove'](el_account_status);
                 });
             }
