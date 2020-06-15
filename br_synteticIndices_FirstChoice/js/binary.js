@@ -23487,6 +23487,7 @@ var Markets = (_temp = _class = function (_React$Component) {
                 key = _ref13[0],
                 node = _ref13[1];
 
+            // to handle position and show the market and underlying menue properly need to -100.
             if (node && node.offsetParent && node.offsetTop - 100 <= position) {
                 arr.push(key);
             }
