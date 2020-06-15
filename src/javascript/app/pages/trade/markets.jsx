@@ -184,7 +184,7 @@ class Markets extends React.Component {
         const arr = [];
         let curr_market = null;
         Object.entries(market_nodes).forEach(([key, node]) => {
-
+        //to handle position and show the market and underlying menue properly need to -100.
             if (node && node.offsetParent && node.offsetTop - 100 <= position) {
                 arr.push(key);
             }
