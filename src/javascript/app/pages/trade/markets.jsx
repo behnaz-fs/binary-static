@@ -65,42 +65,6 @@ const List = ({
     ))
 );
 
-/*
-const submarket_order = {
-    synthetic_index: 0,
-    random_index   : 1,
-    random_daily   : 2,
-    random_nightly : 3,
-    forex          : 4,
-    major_pairs    : 5,
-    minor_pairs    : 6,
-    smart_fx       : 7,
-    indices        : 8,
-    asia_oceania   : 9,
-    europe_africa  : 10,
-    americas       : 11,
-    otc_index      : 12,
-    stocks         : 13,
-    au_otc_stock   : 14,
-    ge_otc_stock   : 15,
-    india_otc_stock: 16,
-    uk_otc_stock   : 17,
-    us_otc_stock   : 18,
-    commodities    : 19,
-    metals         : 20,
-    energy         : 21,
-};
-
-const submarketSort = (a, b) => {
-    if (submarket_order[a] > submarket_order[b]) {
-        return 1;
-    } else if (submarket_order[a] < submarket_order[b]) {
-        return -1;
-    }
-    return 0;
-};
-*/
-
 class Markets extends React.Component {
     constructor (props) {
         super(props);
@@ -187,7 +151,7 @@ class Markets extends React.Component {
         const arr = [];
         let curr_market = null;
         Object.entries(market_nodes).forEach(([key, node]) => {
-            // to handle position and show the market and underlying menue properly need to -100.
+            // to have enough free lines for last underlying(commodities) until the end of underlying menu line .
             if (node && node.offsetParent && node.offsetTop - 100 <= position) {
                 arr.push(key);
             }
