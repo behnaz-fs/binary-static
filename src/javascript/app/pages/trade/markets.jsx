@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Symbols from './symbols';
 // Should be remove in the future
 import Defaults from './defaults';
+import { sortSubmarket } from '../../common/active_symbols';
 import { getElementById } from '../../../_common/common_functions';
 import { localize } from '../../../_common/localize';
 
@@ -40,7 +41,7 @@ const List = ({
             <div className='market_name'>
                 {obj.name}
             </div>
-            {Object.entries(obj.submarkets).sort((a, b) => submarketSort(a[0], b[0]))
+            {Object.entries(obj.submarkets).sort((a, b) => sortSubmarket(a[0], b[0]))
                 .map(([key, submarket], idx_2) => ( // eslint-disable-line no-unused-vars
                     <div className='submarket' key={idx_2}>
                         <div className='submarket_name'>
@@ -115,10 +116,10 @@ class Markets extends React.Component {
             underlying_symbol = localStorage.getItem(`${login_id}_selected_underlying`);
         }
         if (!underlying_symbol || !this.underlyings[underlying_symbol]) {
-            const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(submarketSort)[0];
+            const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(sortSubmarket)[0];
             underlying_symbol = Object.keys(this.markets[market_symbol].submarkets[submarket].symbols).sort()[0];
         }
-        const markets_arr = Object.entries(this.markets).sort((a, b) => submarketSort(a[0], b[0]));
+        const markets_arr = Object.entries(this.markets).sort((a, b) => sortSubmarket(a[0], b[0]));
         this.markets_all = markets_arr.slice();
         if (!(market_symbol in this.markets)) {
             market_symbol = Object.keys(this.markets).find(m => this.markets[m].submarkets[market_symbol]);
@@ -296,6 +297,8 @@ class Markets extends React.Component {
             node.dataset.offsetTop <= position
                 && +node.dataset.offsetHeight + +node.dataset.offsetTop > position
         ));
+
+        if (!current_viewed_node) return;
 
         if (current_viewed_node !== this.references.last_viewed_node) {
             Object.values(market_nodes).forEach(node => {
