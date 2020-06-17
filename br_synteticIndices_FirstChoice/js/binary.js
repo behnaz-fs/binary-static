@@ -2656,6 +2656,7 @@ module.exports = Crowdin;
 var scriptjs = __webpack_require__(/*! scriptjs */ "./node_modules/scriptjs/dist/script.js");
 var getElementById = __webpack_require__(/*! ./common_functions */ "./src/javascript/_common/common_functions.js").getElementById;
 var applyToAllElements = __webpack_require__(/*! ./utility */ "./src/javascript/_common/utility.js").applyToAllElements;
+var getPropertyValue = __webpack_require__(/*! ./utility */ "./src/javascript/_common/utility.js").getPropertyValue;
 var Client = __webpack_require__(/*! ../app/base/client */ "./src/javascript/app/base/client.js");
 
 var Geocoder = function () {
@@ -2754,8 +2755,8 @@ var Geocoder = function () {
         return getElementById(selector.split('#')[1]).value || '';
     };
     var getStateText = function getStateText(selector) {
-        var states_list_el = getElementById(selector.split('#')[1]);
-        return states_list_el.options[states_list_el.selectedIndex].text;
+        var states_list_el = getElementById(selector.split('#')[1]) || {};
+        return getPropertyValue(states_list_el, ['options', states_list_el.selectedIndex, 'text']);
     };
 
     var validate = function validate(form_id) {
@@ -2768,6 +2769,7 @@ var Geocoder = function () {
     var validator = function validator(address) {
         return new Promise(function (resolve) {
             scriptjs.ready('gMaps', function () {
+                if (!google) return;
                 var geocoder = new google.maps.Geocoder();
                 el_btn_validate.classList.add('geocode-btn-disabled');
                 el_success.setVisibility(0);
@@ -12369,7 +12371,36 @@ module.exports = AccountOpening;
 "use strict";
 
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var isEmptyObject = __webpack_require__(/*! ../../_common/utility */ "./src/javascript/_common/utility.js").isEmptyObject;
+
+var submarket_order = {
+    forex: 0,
+    major_pairs: 1,
+    minor_pairs: 2,
+    smart_fx: 3,
+    indices: 4,
+    asia_oceania: 5,
+    europe_africa: 6,
+    americas: 7,
+    otc_index: 8,
+    stocks: 9,
+    au_otc_stock: 10,
+    ge_otc_stock: 11,
+    india_otc_stock: 12,
+    uk_otc_stock: 13,
+    us_otc_stock: 14,
+    commodities: 15,
+    metals: 16,
+    energy: 17,
+    synthetic_index: 18,
+    random_index: 19,
+    random_daily: 20,
+    random_nightly: 21
+};
 
 var ActiveSymbols = function () {
     var groupBy = function groupBy(xs, key) {
@@ -12484,6 +12515,35 @@ var ActiveSymbols = function () {
         return clone(symbols);
     };
 
+    var getSymbolsForMarket = function getSymbolsForMarket(active_symbols, market) {
+        var all_symbols = getSymbols(active_symbols);
+
+        var filtered_symbols = Object.keys(all_symbols)
+        // only keep the symbols of the currently selected market
+        .filter(function (symbol) {
+            return all_symbols[symbol].market === market;
+        })
+        // sort them by the submarket order defined
+        .sort(function (symbol_a, symbol_b) {
+            return sortSubmarket(all_symbols[symbol_a].submarket, all_symbols[symbol_b].submarket);
+        })
+        // make it into an object again with all needed data
+        .reduce(function (obj, symbol) {
+            return _extends({}, obj, _defineProperty({}, symbol, all_symbols[symbol]));
+        }, {});
+
+        return clone(filtered_symbols);
+    };
+
+    var sortSubmarket = function sortSubmarket(a, b) {
+        if (submarket_order[a] > submarket_order[b]) {
+            return 1;
+        } else if (submarket_order[a] < submarket_order[b]) {
+            return -1;
+        }
+        return 0;
+    };
+
     var getMarketsList = function getMarketsList(active_symbols) {
         var trade_markets_list = {};
         extend(trade_markets_list, getMarkets(active_symbols));
@@ -12523,7 +12583,9 @@ var ActiveSymbols = function () {
         getTradeUnderlyings: getTradeUnderlyings,
         getSymbolNames: getSymbolNames,
         clearData: clearData,
-        getSymbols: getSymbols
+        getSymbols: getSymbols,
+        getSymbolsForMarket: getSymbolsForMarket,
+        sortSubmarket: sortSubmarket
     };
 }();
 
@@ -18449,10 +18511,13 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var CreateDropdown = __webpack_require__(/*! @binary-com/binary-style */ "./node_modules/@binary-com/binary-style/binary.js").selectDropdown;
 var getHighstock = __webpack_require__(/*! ../common */ "./src/javascript/app/pages/trade/common.js").requireHighstock;
+var Defaults = __webpack_require__(/*! ../defaults */ "./src/javascript/app/pages/trade/defaults.js");
 var Symbols = __webpack_require__(/*! ../symbols */ "./src/javascript/app/pages/trade/symbols.js");
 var BinarySocket = __webpack_require__(/*! ../../../base/socket */ "./src/javascript/app/base/socket.js");
+var getSymbolsForMarket = __webpack_require__(/*! ../../../common/active_symbols */ "./src/javascript/app/common/active_symbols.js").getSymbolsForMarket;
 var addComma = __webpack_require__(/*! ../../../../_common/base/currency_base */ "./src/javascript/_common/base/currency_base.js").addComma;
 var localize = __webpack_require__(/*! ../../../../_common/localize */ "./src/javascript/_common/localize.js").localize;
+var State = __webpack_require__(/*! ../../../../_common/storage */ "./src/javascript/_common/storage.js").State;
 var template = __webpack_require__(/*! ../../../../_common/utility */ "./src/javascript/_common/utility.js").template;
 
 var DigitInfo = function () {
@@ -18545,20 +18610,13 @@ var DigitInfo = function () {
 
     var addContent = function addContent(underlying) {
         var domain = document.domain.split('.').slice(-2).join('.');
-        var underlyings = [];
-        var symbols = Symbols.getAllSymbols();
-        Object.keys(symbols).forEach(function (key) {
-            if (/^(R_|RD)/.test(key)) {
-                underlyings.push(key);
-            }
-        });
-        underlyings = underlyings.sort();
-        underlyings.splice(2, 0, '1HZ10V'); // add Volatility 10 (1s)
-        underlyings.splice(4, 0, '1HZ100V'); // add Volatility 100 (1s)
+        var symbols = getSymbolsForMarket(State.getResponse('active_symbols'), Defaults.get('market'));
+
         var elem = '';
-        for (var i = 0; i < underlyings.length; i++) {
-            elem += '<option value="' + underlyings[i] + '">' + symbols[underlyings[i]] + '</option>';
-        }
+        Object.keys(symbols).forEach(function (symbol) {
+            elem += '<option value="' + symbol + '">' + symbols[symbol].display + '</option>';
+        });
+
         $('#digit_underlying').html($(elem)).val(underlying);
         $('#digit_domain').text(domain.charAt(0).toUpperCase() + domain.slice(1));
         $('#digit_info_underlying').text($('#digit_underlying option:selected').text());
@@ -18997,8 +19055,9 @@ var Highchart = function () {
                             HighchartUI.setChartOptions(chart_options);
 
                             return _context.abrupt('return', getHighstock(function (Highcharts) {
-                                Highcharts.setOptions(HighchartUI.getHighchartOptions());
                                 if (!el) chart = null;else {
+                                    Highcharts.setOptions(HighchartUI.getHighchartOptions());
+
                                     chart = Highcharts.StockChart(el, HighchartUI.getChartOptions());
                                     is_initialized = true;
 
@@ -23093,6 +23152,8 @@ var _defaults = __webpack_require__(/*! ./defaults */ "./src/javascript/app/page
 
 var _defaults2 = _interopRequireDefault(_defaults);
 
+var _active_symbols = __webpack_require__(/*! ../../common/active_symbols */ "./src/javascript/app/common/active_symbols.js");
+
 var _common_functions = __webpack_require__(/*! ../../../_common/common_functions */ "./src/javascript/_common/common_functions.js");
 
 var _localize = __webpack_require__(/*! ../../../_common/localize */ "./src/javascript/_common/localize.js");
@@ -23146,7 +23207,7 @@ var List = function List(_ref) {
                 obj.name
             ),
             Object.entries(obj.submarkets).sort(function (a, b) {
-                return submarketSort(a[0], b[0]);
+                return (0, _active_symbols.sortSubmarket)(a[0], b[0]);
             }).map(function (_ref4, idx_2) {
                 var _ref5 = _slicedToArray(_ref4, 2),
                     key = _ref5[0],
@@ -23188,32 +23249,33 @@ var List = function List(_ref) {
     });
 };
 
-var submarket_order = {
+/*
+const submarket_order = {
     synthetic_index: 0,
-    random_index: 1,
-    random_daily: 2,
-    random_nightly: 3,
-    forex: 4,
-    major_pairs: 5,
-    minor_pairs: 6,
-    smart_fx: 7,
-    indices: 8,
-    asia_oceania: 9,
-    europe_africa: 10,
-    americas: 11,
-    otc_index: 12,
-    stocks: 13,
-    au_otc_stock: 14,
-    ge_otc_stock: 15,
+    random_index   : 1,
+    random_daily   : 2,
+    random_nightly : 3,
+    forex          : 4,
+    major_pairs    : 5,
+    minor_pairs    : 6,
+    smart_fx       : 7,
+    indices        : 8,
+    asia_oceania   : 9,
+    europe_africa  : 10,
+    americas       : 11,
+    otc_index      : 12,
+    stocks         : 13,
+    au_otc_stock   : 14,
+    ge_otc_stock   : 15,
     india_otc_stock: 16,
-    uk_otc_stock: 17,
-    us_otc_stock: 18,
-    commodities: 19,
-    metals: 20,
-    energy: 21
+    uk_otc_stock   : 17,
+    us_otc_stock   : 18,
+    commodities    : 19,
+    metals         : 20,
+    energy         : 21,
 };
 
-var submarketSort = function submarketSort(a, b) {
+const submarketSort = (a, b) => {
     if (submarket_order[a] > submarket_order[b]) {
         return 1;
     } else if (submarket_order[a] < submarket_order[b]) {
@@ -23221,6 +23283,7 @@ var submarketSort = function submarketSort(a, b) {
     }
     return 0;
 };
+*/
 
 var Markets = (_temp = _class = function (_React$Component) {
     _inherits(Markets, _React$Component);
@@ -23247,11 +23310,11 @@ var Markets = (_temp = _class = function (_React$Component) {
             underlying_symbol = localStorage.getItem(login_id + '_selected_underlying');
         }
         if (!underlying_symbol || !_this.underlyings[underlying_symbol]) {
-            var submarket = Object.keys(_this.markets[market_symbol].submarkets).sort(submarketSort)[0];
+            var submarket = Object.keys(_this.markets[market_symbol].submarkets).sort(_active_symbols.sortSubmarket)[0];
             underlying_symbol = Object.keys(_this.markets[market_symbol].submarkets[submarket].symbols).sort()[0];
         }
         var markets_arr = Object.entries(_this.markets).sort(function (a, b) {
-            return submarketSort(a[0], b[0]);
+            return (0, _active_symbols.sortSubmarket)(a[0], b[0]);
         });
         _this.markets_all = markets_arr.slice();
         if (!(market_symbol in _this.markets)) {
@@ -23604,6 +23667,8 @@ var Markets = (_temp = _class = function (_React$Component) {
         var current_viewed_node = Object.values(market_nodes).find(function (node) {
             return node.dataset.offsetTop <= position && +node.dataset.offsetHeight + +node.dataset.offsetTop > position;
         });
+
+        if (!current_viewed_node) return;
 
         if (current_viewed_node !== _this2.references.last_viewed_node) {
             Object.values(market_nodes).forEach(function (node) {
@@ -33378,6 +33443,7 @@ module.exports = MetaTrader;
 
 var MetaTraderConfig = __webpack_require__(/*! ./metatrader.config */ "./src/javascript/app/pages/user/metatrader/metatrader.config.js");
 var Client = __webpack_require__(/*! ../../../base/client */ "./src/javascript/app/base/client.js");
+var BinarySocket = __webpack_require__(/*! ../../../base/socket */ "./src/javascript/app/base/socket.js");
 var Dialog = __webpack_require__(/*! ../../../common/attach_dom/dialog */ "./src/javascript/app/common/attach_dom/dialog.js");
 var Currency = __webpack_require__(/*! ../../../common/currency */ "./src/javascript/app/common/currency.js");
 var Validation = __webpack_require__(/*! ../../../common/form_validation */ "./src/javascript/app/common/form_validation.js");
@@ -33993,22 +34059,24 @@ var MetaTraderUI = function () {
             return;
         }
 
-        var mt_financial_company = State.getResponse('landing_company.mt_financial_company');
-        var mt_gaming_company = State.getResponse('landing_company.mt_gaming_company');
-        var account = accounts_info[acc_type];
-        var company = void 0;
+        BinarySocket.wait('landing_company').then(function (response) {
+            var mt_financial_company = response.landing_company.mt_financial_company;
+            var mt_gaming_company = response.landing_company.mt_gaming_company;
+            var account = accounts_info[acc_type];
+            var company = void 0;
 
-        if (/standard/.test(account.mt5_account_type)) {
-            company = mt_financial_company.standard;
-        } else if (/advanced/.test(account.mt5_account_type)) {
-            company = mt_financial_company.advanced;
-        } else if (account.account_type === 'gaming' || account.mt5_account_type === '' && account.account_type === 'demo') {
-            company = mt_gaming_company.standard;
-        }
+            if (/standard/.test(account.mt5_account_type)) {
+                company = mt_financial_company.standard;
+            } else if (/advanced/.test(account.mt5_account_type)) {
+                company = mt_financial_company.advanced;
+            } else if (account.account_type === 'gaming' || account.mt5_account_type === '' && account.account_type === 'demo') {
+                company = mt_gaming_company.standard;
+            }
 
-        $el.attr({
-            'data-balloon': localize('Counterparty') + ': ' + company.name + ', ' + localize('Jurisdiction') + ': ' + company.country,
-            'data-balloon-length': 'large'
+            $el.attr({
+                'data-balloon': localize('Counterparty') + ': ' + company.name + ', ' + localize('Jurisdiction') + ': ' + company.country,
+                'data-balloon-length': 'large'
+            });
         });
     };
 
