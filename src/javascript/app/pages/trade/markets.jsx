@@ -65,6 +65,7 @@ const List = ({
     ))
 );
 
+/*
 const submarket_order = {
     synthetic_index: 0,
     random_index   : 1,
@@ -98,6 +99,7 @@ const submarketSort = (a, b) => {
     }
     return 0;
 };
+*/
 
 class Markets extends React.Component {
     constructor (props) {
