@@ -12378,28 +12378,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var isEmptyObject = __webpack_require__(/*! ../../_common/utility */ "./src/javascript/_common/utility.js").isEmptyObject;
 
 var submarket_order = {
-    forex: 0,
-    major_pairs: 1,
-    minor_pairs: 2,
-    smart_fx: 3,
-    indices: 4,
-    asia_oceania: 5,
-    europe_africa: 6,
-    americas: 7,
-    otc_index: 8,
-    stocks: 9,
-    au_otc_stock: 10,
-    ge_otc_stock: 11,
-    india_otc_stock: 12,
-    uk_otc_stock: 13,
-    us_otc_stock: 14,
-    commodities: 15,
-    metals: 16,
-    energy: 17,
-    synthetic_index: 18,
-    random_index: 19,
-    random_daily: 20,
-    random_nightly: 21
+    synthetic_index: 0,
+    random_index: 1,
+    random_daily: 2,
+    random_nightly: 3,
+    forex: 4,
+    major_pairs: 5,
+    minor_pairs: 6,
+    smart_fx: 7,
+    indices: 8,
+    asia_oceania: 9,
+    europe_africa: 10,
+    americas: 11,
+    otc_index: 12,
+    stocks: 13,
+    au_otc_stock: 14,
+    ge_otc_stock: 15,
+    india_otc_stock: 16,
+    uk_otc_stock: 17,
+    us_otc_stock: 18,
+    commodities: 19,
+    metals: 20,
+    energy: 21
 };
 
 var ActiveSymbols = function () {
@@ -23249,42 +23249,6 @@ var List = function List(_ref) {
     });
 };
 
-/*
-const submarket_order = {
-    synthetic_index: 0,
-    random_index   : 1,
-    random_daily   : 2,
-    random_nightly : 3,
-    forex          : 4,
-    major_pairs    : 5,
-    minor_pairs    : 6,
-    smart_fx       : 7,
-    indices        : 8,
-    asia_oceania   : 9,
-    europe_africa  : 10,
-    americas       : 11,
-    otc_index      : 12,
-    stocks         : 13,
-    au_otc_stock   : 14,
-    ge_otc_stock   : 15,
-    india_otc_stock: 16,
-    uk_otc_stock   : 17,
-    us_otc_stock   : 18,
-    commodities    : 19,
-    metals         : 20,
-    energy         : 21,
-};
-
-const submarketSort = (a, b) => {
-    if (submarket_order[a] > submarket_order[b]) {
-        return 1;
-    } else if (submarket_order[a] < submarket_order[b]) {
-        return -1;
-    }
-    return 0;
-};
-*/
-
 var Markets = (_temp = _class = function (_React$Component) {
     _inherits(Markets, _React$Component);
 
@@ -23550,7 +23514,7 @@ var Markets = (_temp = _class = function (_React$Component) {
                 key = _ref13[0],
                 node = _ref13[1];
 
-            // to handle position and show the market and underlying menue properly need to -100.
+            // to have enough free lines for last underlying(commodities) until the end of underlying menu line .
             if (node && node.offsetParent && node.offsetTop - 100 <= position) {
                 arr.push(key);
             }
