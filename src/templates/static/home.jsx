@@ -403,11 +403,14 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trustpilot-widget .gr-centered-m" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="58dc92220000ff00059f7dc4" data-style-height="130px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en">
+                    <SeparatorLine className='gr-bottom-30' show_mobile />
+                </div>   
+            </div>
+             <div >
+                <div className="trustpilot-widget .gr-centered-m " data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="58dc92220000ff00059f7dc4" data-style-height="150px" data-style-width="100%" data-theme="light" data-stars="4,5" data-review-languages="en">
                 <a href="https://www.trustpilot.com/review/binary.com" target="_blank" rel="noopener noreferrer">Trustpilot</a>
                 </div>
-            </div>
+            </div> 
         </React.Fragment>
     );
 };
