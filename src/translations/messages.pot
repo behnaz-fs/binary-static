@@ -508,16 +508,25 @@ msgstr ""
 msgid "0.3%"
 msgstr ""
 
-msgid "0.30"
+msgid "0.4%"
 msgstr ""
 
-msgid "0.4%"
+msgid "0.40"
 msgstr ""
 
 msgid "0.5%"
 msgstr ""
 
+msgid "0.50"
+msgstr ""
+
+msgid "0.70"
+msgstr ""
+
 msgid "0.75%"
+msgstr ""
+
+msgid "0.80"
 msgstr ""
 
 msgid "1 million transactions/day"
@@ -1795,10 +1804,10 @@ msgstr ""
 msgid "B. Scope"
 msgstr ""
 
-msgid "BIEL RTS28 for 2017"
+msgid "BIEL RTS28 for 2018"
 msgstr ""
 
-msgid "BIEL RTS28 for 2018"
+msgid "BIEL RTS28 for 2019"
 msgstr ""
 
 msgid "BIEL forms part of %1the Investor Compensation Scheme%2 (the \"Scheme\"), which is a rescue fund for investors that are clients of failed investment firms licensed by the MFSA. The Scheme covers 90% of the Company's net liability to a client in respect of investments that qualify for compensation under the Investment Services Act subject to a maximum payment to any one person of €20,000. The Scheme is based on EC Directive 97/9."
@@ -2020,22 +2029,10 @@ msgstr ""
 msgid "Binary (IOM) Ltd."
 msgstr ""
 
-msgid "Binary (SVG) LLC"
-msgstr ""
-
 msgid "Binary (SVG) LLC,"
 msgstr ""
 
-msgid "Binary (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
-msgstr ""
-
-msgid "Binary (V) Ltd"
-msgstr ""
-
 msgid "Binary (V) Ltd,"
-msgstr ""
-
-msgid "Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
 msgstr ""
 
 msgid "Binary Bot"
@@ -2045,9 +2042,6 @@ msgid "Binary Bot released"
 msgstr ""
 
 msgid "Binary Coin"
-msgstr ""
-
-msgid "Binary Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
 msgstr ""
 
 msgid "Binary Investments (Europe) Limited is entitled to provide services in another EU Member State through EU passporting rights. Refer to the map below for the list of EU countries that have access to %1 via EU passporting rights - freedom to provide cross border services."
@@ -2629,13 +2623,13 @@ msgstr ""
 msgid "Clients are also advised that their rights may be prejudiced if they provide the wrong information as the Company would not be in a position to act in their best interests."
 msgstr ""
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Binary (V) Ltd. %1 is not available in the Republic of Vanuatu."
-msgstr ""
-
 msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (BVI) Ltd. %1 is not available in the British Virgin Islands."
 msgstr ""
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Binary (SVG) LLC."
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (V) Ltd. %1 is not available in the Republic of Vanuatu."
+msgstr ""
+
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Deriv (SVG) LLC."
 msgstr ""
 
 msgid "Clients from the rest of the world (excluding certain jurisdictions such as the USA, Canada, and the European Union) who wish to trade CFDs will have their MetaTrader 5 account opened with Binary (FX) Ltd. %1 is not available in Malaysia."
@@ -3503,6 +3497,21 @@ msgid "Deriv (BVI) Ltd"
 msgstr ""
 
 msgid "Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands. Licensed and regulated by the British Virgin Islands Financial Services Commission - %1view licence%2."
+msgstr ""
+
+msgid "Deriv (SVG) LLC"
+msgstr ""
+
+msgid "Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
+msgstr ""
+
+msgid "Deriv (V) Ltd"
+msgstr ""
+
+msgid "Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
+msgstr ""
+
+msgid "Deriv Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
 msgstr ""
 
 msgid "Deriv Group members are sometimes referred to collectively as \"%1\" or \"the Company\"."
@@ -5818,7 +5827,7 @@ msgstr ""
 msgid "In the Isle of Man and the UK, Synthetic Indices are offered by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles; licensed and regulated respectively by (1) the Gambling Supervision Commission in the Isle of Man (current licence issued on 31 August 2017) and by (2) the Gambling Commission in the UK (licence %1reference no: 39172%2)."
 msgstr ""
 
-msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Binary (SVG) LLC, Binary (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
+msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Deriv (SVG) LLC, Deriv (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
 msgstr ""
 
 msgid "In the case of a Limit Order, the client acknowledges that the Company will endeavour to fill the Order at a level that is the same or better than the Limit the client has specified, subject to the availability of the Limit Price."
@@ -6859,12 +6868,6 @@ msgstr ""
 msgid "Matches/Differs"
 msgstr ""
 
-msgid "Maximum Payout"
-msgstr ""
-
-msgid "Maximum Profit"
-msgstr ""
-
 msgid "Maximum account cash balance"
 msgstr ""
 
@@ -7339,12 +7342,6 @@ msgstr ""
 msgid "No party shall be deemed liable for a partial or complete failure to meet its obligations under this Agreement, in case of force majeure events, including but not limited to civil war, unrest, insurrection, international intervention, any governmental actions, exchange controls, nationalisations, devaluations, forfeitures, natural disasters, act of God, and other inevitable or unforeseeable, unanticipated, and unpredicted events not depending on the will of the parties."
 msgstr ""
 
-msgid "No payout if exit spot is above or equal to the upper barrier."
-msgstr ""
-
-msgid "No payout if exit spot is below or equal to the lower barrier."
-msgstr ""
-
 msgid "No person shall abuse this site for the purpose of money laundering. The Company employs best-practice anti-money laundering procedures. All transactions are checked to prevent money laundering, which may have several effects on clients. The Company reserves the right to refuse to do business with, to discontinue to do business with, and to reverse the transactions of clients who do not accept or adhere to these anti-money laundering processes. Acceptable funds should not originate from criminal activity. The Company is bound to report suspicious transactions to relevant authorities."
 msgstr ""
 
@@ -7402,7 +7399,7 @@ msgstr ""
 msgid "Note: For any enquiries regarding disabled or excluded accounts, please contact %1Customer Support%2."
 msgstr ""
 
-msgid "Note: Payment Agent transfers are only available for accounts registered with Binary (SVG) LLC. Transactions are accepted only in US dollars."
+msgid "Note: Payment Agent transfers are only available for accounts registered with Deriv (SVG) LLC. Transactions are accepted only in US dollars."
 msgstr ""
 
 msgid "Note: You are limited to one fiat currency account. The currency of your fiat account can be changed before you deposit into your fiat account for the first time or create an MT5 account. You may also open one account for each supported cryptocurrency."
@@ -7762,7 +7759,7 @@ msgstr ""
 msgid "Our website uses cookies to give you the best user experience. For more information, %1view our policy%2."
 msgstr ""
 
-msgid "Outside the EU, financial products are offered by Binary (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
+msgid "Outside the EU, financial products are offered by Deriv (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
 msgstr ""
 
 msgid "Outstanding written and verbal communication skills and excellent command of English"
@@ -8156,6 +8153,9 @@ msgid "Please do not share your bank account, credit card, or e-wallet with anot
 msgstr ""
 
 msgid "Please ensure that you have the Telegram app installed on your device."
+msgstr ""
+
+msgid "Please ensure that your address is complete and accurate."
 msgstr ""
 
 msgid "Please enter a valid Login ID."
@@ -8711,6 +8711,12 @@ msgid "RTS 27 2020"
 msgstr ""
 
 msgid "RTS 28"
+msgstr ""
+
+msgid "Range Break 100 Index"
+msgstr ""
+
+msgid "Range Break 200 Index"
 msgstr ""
 
 msgid "Range break 100 breaks through the range on average once every 100 times that it hits the border."
@@ -11614,6 +11620,9 @@ msgstr ""
 msgid "This Policy applies to retail and professional clients of %1 dealing in financial products offered by %1."
 msgstr ""
 
+msgid "This Tax Identification Number (TIN) is invalid. You may continue, but to facilitate future payment processes, valid tax information will be required."
+msgstr ""
+
 msgid "This account is disabled"
 msgstr ""
 
@@ -11623,7 +11632,7 @@ msgstr ""
 msgid "This agreement constitutes the entire agreement between the Parties, and no earlier representation, arrangement, or agreement, whether written or oral, relating to any matter dealt with in this agreement between the Parties, shall have any force or effect before the Commencement Date."
 msgstr ""
 
-msgid "This agreement is between Binary (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
+msgid "This agreement is between Deriv (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
 msgstr ""
 
 msgid "This agreement is supplied to the Agent in English. In the event that there is a difference between the English version and any translated versions of this document, the English version shall prevail. The Company shall not be liable for any loss or damage whatsoever caused by an error, inaccuracy, or misspelling and, as a result, by misunderstanding or misinterpretation of any of the terms or conditions or clauses or provisions of any translated versions of this agreement."
@@ -11642,6 +11651,9 @@ msgid "This bonus is only available to new clients. Existing or former clients d
 msgstr ""
 
 msgid "This bonus will be processed and credited to a client's account when both of the following cases are true:"
+msgstr ""
+
+msgid "This contract is only available on %1DTrader%2."
 msgstr ""
 
 msgid "This contract is only available on DTrader.%1%2Go to Dtrader%3 to close or cancel this contract."
@@ -12022,10 +12034,10 @@ msgstr ""
 msgid "Trade forex and CFDs on our popular multi-asset platform."
 msgstr ""
 
-msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
+msgid "Trade forex and CFDs with a powerful platform recognised as the global standard."
 msgstr ""
 
-msgid "Trade forex, CFDs, and binary options with a powerful platform recognised as the global standard."
+msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
 msgstr ""
 
 msgid "Trade in the world's financial markets"
@@ -12092,6 +12104,9 @@ msgid "Traders choose to buy a certain currency pair if they think the value of 
 msgstr ""
 
 msgid "Trading"
+msgstr ""
+
+msgid "Trading Information"
 msgstr ""
 
 msgid "Trading Limits"
@@ -12556,10 +12571,16 @@ msgstr ""
 msgid "Verification code is wrong. Please use the link sent to your email."
 msgstr ""
 
+msgid "Verification required"
+msgstr ""
+
 msgid "Verify Reset Password"
 msgstr ""
 
 msgid "Verify and approve clients' deposit and withdrawal requests"
+msgstr ""
+
+msgid "Verify identity"
 msgstr ""
 
 msgid "Verify main password"
@@ -12640,16 +12661,31 @@ msgstr ""
 msgid "Visa is an international company that supports digital payments around the world, most commonly through their brand of credit and debit cards. For more information, please visit %1."
 msgstr ""
 
+msgid "Volatility 10 (1s) Index"
+msgstr ""
+
 msgid "Volatility 10 Index"
+msgstr ""
+
+msgid "Volatility 100 (1s) Index"
 msgstr ""
 
 msgid "Volatility 100 Index"
 msgstr ""
 
+msgid "Volatility 25 (1s) Index"
+msgstr ""
+
 msgid "Volatility 25 Index"
 msgstr ""
 
+msgid "Volatility 50 (1s) Index"
+msgstr ""
+
 msgid "Volatility 50 Index"
+msgstr ""
+
+msgid "Volatility 75 (1s) Index"
 msgstr ""
 
 msgid "Volatility 75 Index"
@@ -12707,9 +12743,6 @@ msgid "We believe that we should always do the right thing. This includes servin
 msgstr ""
 
 msgid "We can't validate your personal details because there is some information missing."
-msgstr ""
-
-msgid "We could not recognise your address. You may proceed but please ensure that your address is complete and accurate."
 msgstr ""
 
 msgid "We delete an order with the largest margin reserved."
@@ -13174,12 +13207,6 @@ msgstr ""
 msgid "Why you should use %1 instead of your ISP's default DNS service"
 msgstr ""
 
-msgid "Win maximum payout if the exit spot is higher than or equal to the upper barrier."
-msgstr ""
-
-msgid "Win maximum payout if the exit spot is lower than or equal to the lower barrier."
-msgstr ""
-
 msgid "Win payout if consecutive ticks fall successively. Contract is lost when at least one tick rises or is equal to any of the previous ticks."
 msgstr ""
 
@@ -13196,12 +13223,6 @@ msgid "Win the multiplier times the high minus close."
 msgstr ""
 
 msgid "Win the multiplier times the high minus low."
-msgstr ""
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between exit spot and lower barrier."
-msgstr ""
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between upper barrier and exit spot."
 msgstr ""
 
 msgid "Windows"
@@ -13274,6 +13295,9 @@ msgid "Withdrawal: Not applicable"
 msgstr ""
 
 msgid "Withdrawals have been disabled on your account. Please check your email for more details."
+msgstr ""
+
+msgid "Withdrawals have been disabled on your account. Please wait until your uploaded documents are verified."
 msgstr ""
 
 msgid "Withdrawals may only be paid to the initiator of an account. When a client maintains an account by means of telegraphic deposits, withdrawals are only paid to the holder of the originating bank account, and it is the onus of the client to ensure that account number and name accompany all transfers to the Company. When a client maintains an account by means of credit/debit card deposits, withdrawals are only paid back to the same card."

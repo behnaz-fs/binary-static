@@ -2,16 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary-static\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2020-06-02 06:01\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-06-18 06:43\n"
+"Last-Translator: \n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: binary-static\n"
+"X-Crowdin-Project-ID: 224893\n"
 "X-Crowdin-Language: es-ES\n"
 "X-Crowdin-File: messages.pot\n"
+"X-Crowdin-File-ID: 111\n"
 "Language: es_ES\n"
 
 msgid "1"
@@ -426,7 +428,7 @@ msgid "%1's systems are now processing in excess of 1 million transactions/day (
 msgstr "Los sistemas de %1 están ahora procesando más de 1 millón de transacciones por día (incluyendo cuentas virtuales)."
 
 msgid "%124/7 customer support%2 to enhance your trading experience"
-msgstr ""
+msgstr "%1Atención al cliente 24/7%2 para mejorar su experiencia comercial"
 
 msgid "%1Choose a currency%2 for your fiat currency account:"
 msgstr "%1Elija una moneda%2 para su cuenta de moneda fiduciaria:"
@@ -521,17 +523,26 @@ msgstr "0.20"
 msgid "0.3%"
 msgstr "0.3%"
 
-msgid "0.30"
-msgstr "0.30"
-
 msgid "0.4%"
 msgstr "0.4%"
+
+msgid "0.40"
+msgstr "0.40"
 
 msgid "0.5%"
 msgstr "0.5%"
 
+msgid "0.50"
+msgstr "0.50"
+
+msgid "0.70"
+msgstr "0.70"
+
 msgid "0.75%"
 msgstr "0.75%"
+
+msgid "0.80"
+msgstr "0.80"
 
 msgid "1 million transactions/day"
 msgstr "1 millón de transacciones por día"
@@ -762,7 +773,7 @@ msgid "A proactive approach in problem-solving"
 msgstr "Proactividad a la hora de resolver problemas"
 
 msgid "A rebranding of %1 to an all-new trading experience"
-msgstr ""
+msgstr "Un cambio de marca de %1 a una experiencia comercial completamente nueva"
 
 msgid "A referred client is someone who has been referred through your unique affiliate link and who has deposited money into their %1 account. They must fulfil the following criteria:"
 msgstr "Un cliente referido es alguien que ha sido referido a través de su enlace único de afiliado y que ha depositado dinero en su cuenta de %1. Deberán cumplir con los siguientes criterios:"
@@ -771,10 +782,10 @@ msgid "A regulator or law enforcement authority might ask us to share otherwise 
 msgstr "Un regulador o una autoridad de aplicación de la ley podría pedirnos que compartamos información confidencial en relación con las investigaciones de un presunto delito, en particular el lavado de dinero (ver más abajo). Si recibe una solicitud para compartir información confidencial, debe informar inmediatamente a %1compliance@binary.com%2 quién le brindará orientación sobre cómo responder."
 
 msgid "A sharp design with %1user-friendly%2 interface"
-msgstr ""
+msgstr "Un diseño nítido con la interfaz %1amigable para el usuario%2"
 
 msgid "A single, comprehensive trading service with %14 advanced platforms%2"
-msgstr ""
+msgstr "Un servicio comercial único e integral con %14 plataformas avanzadas%2"
 
 msgid "A strong background in statistics, mathematics or engineering."
 msgstr "Una formación sólida en estadística, matemáticas o ingeniería."
@@ -1809,11 +1820,11 @@ msgstr "B. Comienzo"
 msgid "B. Scope"
 msgstr "B. Alcance"
 
-msgid "BIEL RTS28 for 2017"
-msgstr "BIEL RTS28 para 2017"
-
 msgid "BIEL RTS28 for 2018"
 msgstr "BIEL RTS28 para 2018"
+
+msgid "BIEL RTS28 for 2019"
+msgstr "BIEL RTS28 para 2019"
 
 msgid "BIEL forms part of %1the Investor Compensation Scheme%2 (the \"Scheme\"), which is a rescue fund for investors that are clients of failed investment firms licensed by the MFSA. The Scheme covers 90% of the Company's net liability to a client in respect of investments that qualify for compensation under the Investment Services Act subject to a maximum payment to any one person of €20,000. The Scheme is based on EC Directive 97/9."
 msgstr "BIEL forma parte del %Esquema de Compensación de Inversores%2, o Investor Compensation Scheme, (el \"Esquema\") que es un fondo de rescate para los inversionistas que son clientes de empresas de inversión fallidas y reguladas por la MFSA (Autoridad de Servicios Financieros de Malta). El Esquema cubre el 90% del monto neto que la Empresa debe a un cliente en concepto de inversiones aptas para una indemnización según la ley de servicios de inversión, sujeta a un pago máximo de € 20.000 por persona. El Esquema se basa en la directiva de la Unión Europea número 97/9."
@@ -2034,23 +2045,11 @@ msgstr "Binary (IOM) Ltd, Primer piso, Millennium House, Victoria Road, Douglas,
 msgid "Binary (IOM) Ltd."
 msgstr "Binary (IOM) Ltd."
 
-msgid "Binary (SVG) LLC"
-msgstr "Binary (SVG) LLC"
-
 msgid "Binary (SVG) LLC,"
 msgstr "Binary (SVG) LLC,"
 
-msgid "Binary (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
-msgstr "Binary (SVG) LLC, Edificio Hinds, Kingstown, San Vicente y las Granadinas; Número de la empresa 25299 BC 2019."
-
-msgid "Binary (V) Ltd"
-msgstr "Binary (V) Ltd"
-
 msgid "Binary (V) Ltd,"
 msgstr "Binary (V) Ltd,"
-
-msgid "Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
-msgstr "Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, República de Vanuatu. Autorizada y regulada por la Comisión de Servicios Financieros de Vanuatu - %1ver licencia%2."
 
 msgid "Binary Bot"
 msgstr "Binary Bot"
@@ -2060,9 +2059,6 @@ msgstr "Binary Bot lanzado"
 
 msgid "Binary Coin"
 msgstr "Binary Coin"
-
-msgid "Binary Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
-msgstr "Binary Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
 
 msgid "Binary Investments (Europe) Limited is entitled to provide services in another EU Member State through EU passporting rights. Refer to the map below for the list of EU countries that have access to %1 via EU passporting rights - freedom to provide cross border services."
 msgstr "Binary Investments (Europe) Limited tiene derecho a prestar servicios en otro Estado miembro de la UE a través de los derechos de pasaporte de la UE. Véase en el mapa que figura a continuación la lista de países de la UE que tienen acceso al %1 a través de los derechos de pasaporte de la UE - libertad de prestación de servicios transfronterizos."
@@ -2643,14 +2639,14 @@ msgstr "Los clientes se comprometen a cumplir con peticiones razonables presenta
 msgid "Clients are also advised that their rights may be prejudiced if they provide the wrong information as the Company would not be in a position to act in their best interests."
 msgstr "Se les aconseja además a los clientes que sus derechos pueden verse perjudicados si proporcionan información incorrecta, ya que la Empresa no estará en condiciones de actuar en el mejor interés de los clientes."
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Binary (V) Ltd. %1 is not available in the Republic of Vanuatu."
-msgstr "Los clientes del resto del mundo (excluyendo ciertos países como EEUU, Canadá, Hong Kong) abrirán su cuenta Metatrader 5 de FX y CFD en Binary (V) Ltd. %1 no está disponible en la República de Vanuatu."
-
 msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (BVI) Ltd. %1 is not available in the British Virgin Islands."
 msgstr "Los clientes del resto del mundo (excluyendo ciertos países como EEUU, Canadá, Hong Kong) abrirán su cuenta Metatrader 5 de FX y CFD en Deriv (BVI) Ltd. %1 no está disponible en la Islas Vírgenes Británicas."
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Binary (SVG) LLC."
-msgstr "Los clientes del resto del mundo (excluyendo ciertos países como EE. UU., Canadá y Hong Kong) tendrán su cuenta abierta con Binary (SVG) LLC."
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (V) Ltd. %1 is not available in the Republic of Vanuatu."
+msgstr "Los clientes del resto del mundo (excluyendo ciertos países como EEUU, Canadá, Hong Kong) abrirán su cuenta Metatrader 5 de FX y CFD en Deriv (V) Ltd. %1 no está disponible en la República de Vanuatu."
+
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Deriv (SVG) LLC."
+msgstr "Los clientes del resto del mundo (excluyendo ciertos países como EE. UU., Canadá y Hong Kong) tendrán su cuenta abierta con Deriv (SVG) LLC."
 
 msgid "Clients from the rest of the world (excluding certain jurisdictions such as the USA, Canada, and the European Union) who wish to trade CFDs will have their MetaTrader 5 account opened with Binary (FX) Ltd. %1 is not available in Malaysia."
 msgstr "Aquellos clientes del resto del mundo (con la excepción de ciertas jurisdicciones como los Estados Unidos, Canadá y la Unión Europea) que deseen operar con CFD, abrirán su cuenta de MetaTrader 5 con Binary (FX) Ltd. %1 no se encuentra disponible en Malasia."
@@ -3518,6 +3514,21 @@ msgstr "Deriv (BVI) Ltd"
 
 msgid "Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands. Licensed and regulated by the British Virgin Islands Financial Services Commission - %1view licence%2."
 msgstr "Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, Islas Vírgenes Británicas. Autorizado y regulado por la Comisión de Servicios Financieros de las Islas Vírgenes Británicas -%1ver licencia%2."
+
+msgid "Deriv (SVG) LLC"
+msgstr "Deriv (SVG) LLC"
+
+msgid "Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
+msgstr "Deriv (SVG) LLC, Edificio Hinds, Kingstown, San Vicente y las Granadinas; Número de la empresa 25299 BC 2019."
+
+msgid "Deriv (V) Ltd"
+msgstr "Deriv (V) Ltd"
+
+msgid "Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
+msgstr "Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, República de Vanuatu. Licenciada y regulada por la Comisión de Servicios Financieros de Vanuatu - %1ver licencia%2."
+
+msgid "Deriv Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
+msgstr "Deriv Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
 
 msgid "Deriv Group members are sometimes referred to collectively as \"%1\" or \"the Company\"."
 msgstr "Los miembros del grupo Deriv Group son ocasionalmente denominados colectivamente \"%1\" o \"la Empresa\"."
@@ -5833,8 +5844,8 @@ msgstr "En la Unión Europea, los productos de inversión se ofrecen a través d
 msgid "In the Isle of Man and the UK, Synthetic Indices are offered by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles; licensed and regulated respectively by (1) the Gambling Supervision Commission in the Isle of Man (current licence issued on 31 August 2017) and by (2) the Gambling Commission in the UK (licence %1reference no: 39172%2)."
 msgstr "En la Isla de Man y el Reino Unido, los índices sintéticos se ofrecen a través de Binary (IOM) Ltd., Primer Piso, Millennium House, Victoria Road, Douglas, IM2 4RW, Isla de Man, Islas Británica, licenciado y regulado respectivamente por (1) la Comisión Supervisora de Apuestas de la Isla de Man (licencia actual otorgada el 31 de agosto de 2017) y por (2) la Comisión de Apuestas del Reino Unido (número de %1referencia de licencia 39172%2)."
 
-msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Binary (SVG) LLC, Binary (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
-msgstr "En el Reino Unido, nuestros clientes operan a través de Binary (IOM) Ltd y Binary Investments (Europe) Ltd. En la Isla de Man, operan a través de Binary (IOM) Ltd. En la Unión Europea (excepto en el Reino Unido) a través de Binary (Europe) Ltd y Binary Investments (Europe) Ltd. En el resto del mundo, operan a través de Binary (SVG) LLC, Binary (V) Ltd, Deriv (BVI) Ltd y Binary (FX) Ltd."
+msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Deriv (SVG) LLC, Deriv (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
+msgstr "En el Reino Unido, nuestros clientes operan a través de Binary (IOM) Ltd y Binary Investments (Europe) Ltd. En la Isla de Man, operan a través de Binary (IOM) Ltd. En la Unión Europea (excepto en el Reino Unido) a través de Binary (Europe) Ltd y Binary Investments (Europe) Ltd. En el resto del mundo, operan a través de Deriv (SVG) LLC, Deriv (V) Ltd, Deriv (BVI) Ltd y Binary (FX) Ltd."
 
 msgid "In the case of a Limit Order, the client acknowledges that the Company will endeavour to fill the Order at a level that is the same or better than the Limit the client has specified, subject to the availability of the Limit Price."
 msgstr "En el caso de una Orden Límite, el cliente reconoce que la Empresa se esforzará para concretar la Orden a un nivel igual o mejor que el límite especificado por el cliente, sujeto a la disponibilidad del Precio Límite."
@@ -6011,7 +6022,7 @@ msgid "Introducing Brokers"
 msgstr "Brokers Introductores"
 
 msgid "Introducing Deriv.com"
-msgstr ""
+msgstr "Presentamos Deriv.com"
 
 msgid "Introducing USB"
 msgstr "Presentando USB"
@@ -6344,7 +6355,7 @@ msgid "Learn more"
 msgstr "Conozca más"
 
 msgid "Learn more about Deriv.com"
-msgstr ""
+msgstr "Aprenda más sobre Deriv.com"
 
 msgid "Learn more about our corporate culture"
 msgstr "Aprenda más acerca de nuestra cultura corporativa"
@@ -6874,12 +6885,6 @@ msgstr "Mastercard es una compañía internacional que procesa los pagos realiza
 msgid "Matches/Differs"
 msgstr "Iguales/Diferentes"
 
-msgid "Maximum Payout"
-msgstr "Pago máximo"
-
-msgid "Maximum Profit"
-msgstr "Ganancia máxima"
-
 msgid "Maximum account cash balance"
 msgstr "Saldo de caja máximo en la cuenta"
 
@@ -7088,7 +7093,7 @@ msgid "Monitoring and review of this policy"
 msgstr "Supervisión y revisión de esta política"
 
 msgid "More %1financial instruments%2 to trade as you please"
-msgstr ""
+msgstr "Más %1instrumentos financieros%2 para operar como desee"
 
 msgid "More benefits"
 msgstr "Más ventajas"
@@ -7354,17 +7359,11 @@ msgstr "No hay posiciones abiertas."
 msgid "No party shall be deemed liable for a partial or complete failure to meet its obligations under this Agreement, in case of force majeure events, including but not limited to civil war, unrest, insurrection, international intervention, any governmental actions, exchange controls, nationalisations, devaluations, forfeitures, natural disasters, act of God, and other inevitable or unforeseeable, unanticipated, and unpredicted events not depending on the will of the parties."
 msgstr "Ninguna parte será considerada responsable por un incumplimiento parcial o total de sus obligaciones, bajo este Acuerdo, en caso de eventos de fuerza mayor, incluyendo pero no limitándose a guerra civil, disturbios, insurrección, intervención internacional, cualquier acción gubernamental, controles de cambio, nacionalizaciones, devaluaciones, confiscaciones, desastres naturales, casos fortuitos y otros eventos inevitables o imprevisibles, inesperados o insospechados que no dependan de la voluntad de las partes."
 
-msgid "No payout if exit spot is above or equal to the upper barrier."
-msgstr "No hay pago si el punto de salida es superior o igual a la barrera superior."
-
-msgid "No payout if exit spot is below or equal to the lower barrier."
-msgstr "No hay pago si el punto de salida es inferior o igual a la barrera inferior."
-
 msgid "No person shall abuse this site for the purpose of money laundering. The Company employs best-practice anti-money laundering procedures. All transactions are checked to prevent money laundering, which may have several effects on clients. The Company reserves the right to refuse to do business with, to discontinue to do business with, and to reverse the transactions of clients who do not accept or adhere to these anti-money laundering processes. Acceptable funds should not originate from criminal activity. The Company is bound to report suspicious transactions to relevant authorities."
 msgstr "Ninguna persona abusará de este sitio con el fin de lavar dinero. La Empresa implementa el sistema de buenas prácticas contra el lavado de dinero. Todas las transacciones son revisadas para prevenir lavado de dinero, lo que puede tener varios efectos sobre los clientes. La Empresa se reserva el derecho a negarse a hacer negocios, suspender o anular negocios o transacciones de los clientes que no acepten o no se adhieran a estas medidas contra el lavado de dinero. Los fondos para invertir no deben proceder de ningún tipo de actividad criminal. La Empresa tiene la obligación de informar a las autoridades pertinentes sobre transacciones sospechosas."
 
 msgid "No sign up required. Easily log in with your %1 credentials."
-msgstr ""
+msgstr "No es necesario registrarse. Inicie sesión fácilmente con sus credenciales %1."
 
 msgid "No thanks"
 msgstr "No, gracias"
@@ -7417,8 +7416,8 @@ msgstr "Nota: Un bono sin depósito por valor de 10 USD será acreditado a su cu
 msgid "Note: For any enquiries regarding disabled or excluded accounts, please contact %1Customer Support%2."
 msgstr "Nota: Para cualquier consulta relacionada a cuentas deshabilitadas o excluidas, póngase en contacto con nuestro servicio de %1atención al cliente%."
 
-msgid "Note: Payment Agent transfers are only available for accounts registered with Binary (SVG) LLC. Transactions are accepted only in US dollars."
-msgstr "Nota: Las transferencias con Agentes de Pago sólo están disponibles para cuentas registradas con Binary (SVG) LLC. Se aceptan sólo las transacciones en dólares estadounidenses."
+msgid "Note: Payment Agent transfers are only available for accounts registered with Deriv (SVG) LLC. Transactions are accepted only in US dollars."
+msgstr "Nota: Las transferencias con Agentes de Pago sólo están disponibles para cuentas registradas con Deriv (SVG) LLC. Se aceptan sólo las transacciones en dólares estadounidenses."
 
 msgid "Note: You are limited to one fiat currency account. The currency of your fiat account can be changed before you deposit into your fiat account for the first time or create an MT5 account. You may also open one account for each supported cryptocurrency."
 msgstr "Nota: Puede abrir solo una cuenta de moneda fiat. La moneda de su cuenta fiat se puede cambiar antes de depositar por primera vez o antes de crear una cuenta MT5. Además, puede abrir una cuenta para cada criptomoneda disponible."
@@ -7777,8 +7776,8 @@ msgstr "Nuestros valores"
 msgid "Our website uses cookies to give you the best user experience. For more information, %1view our policy%2."
 msgstr "Nuestro sitio web utiliza cookies para proporcionarle la mejor experiencia de usuario. Para obtener más información, %1 consulte nuestra política%2."
 
-msgid "Outside the EU, financial products are offered by Binary (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
-msgstr "Fuera de la UE, los productos financieros son ofrecidos por Binary (SVG) LLC, Edificio Hinds, Kingstown, San Vicente y las Granadinas; Binary (V) Ltd, Edificio Govant, Port Vila, PO Box 1276, Vanuatu, regulada por la Comisión de Servicios Financieros de Vanuatu (%1ver licencia%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, Islas Vírgenes Británicas, regulada por la Comisión de Servicios Financieros de las Islas Vírgenes Británicas (%3licencia núm. SIBA/L/18/1114%4); y Binary (FX) Ltd, Lote Núm. F16, Primer Piso, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malasia, regulada por la Autoridad de Servicios Financieros de Labuan para actividades comerciales de corretaje de cambios (%5licencia núm. MB/18/0024%6)."
+msgid "Outside the EU, financial products are offered by Deriv (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
+msgstr "Fuera de la UE, los productos financieros son ofrecidos por Deriv (SVG) LLC, Edificio Hinds, Kingstown, San Vicente y las Granadinas; Deriv (V) Ltd, Edificio Govant, Port Vila, PO Box 1276, Vanuatu, regulada por la Comisión de Servicios Financieros de Vanuatu (%1ver licencia%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, Islas Vírgenes Británicas, regulada por la Comisión de Servicios Financieros de las Islas Vírgenes Británicas (%3licencia núm. SIBA/L/18/1114%4); y Binary (FX) Ltd, Lote Núm. F16, Primer Piso, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malasia, regulada por la Autoridad de Servicios Financieros de Labuan para actividades comerciales de corretaje de cambios (%5licencia núm. MB/18/0024%6)."
 
 msgid "Outstanding written and verbal communication skills and excellent command of English"
 msgstr "Habilidades sobresalientes de comunicación escrita y verbal y un excelente dominio del inglés."
@@ -8172,6 +8171,9 @@ msgstr "Por favor, no comparta su cuenta bancaria, tarjeta de crédito o billete
 
 msgid "Please ensure that you have the Telegram app installed on your device."
 msgstr "Asegúrese de tener la aplicación Telegram instalada en su dispositivo."
+
+msgid "Please ensure that your address is complete and accurate."
+msgstr ""
 
 msgid "Please enter a valid Login ID."
 msgstr "Ingrese un ID de usuario válido."
@@ -8727,6 +8729,12 @@ msgstr "RTS 27 2020"
 
 msgid "RTS 28"
 msgstr "RTS 28"
+
+msgid "Range Break 100 Index"
+msgstr "Índice Range Break 100"
+
+msgid "Range Break 200 Index"
+msgstr "Índice Range Break 200"
 
 msgid "Range break 100 breaks through the range on average once every 100 times that it hits the border."
 msgstr "Range break 100 rompe el rango en promedio una vez cada 100 veces que llega al borde."
@@ -11629,6 +11637,9 @@ msgstr "Este Acuerdo se regirá e interpretará de acuerdo con las leyes del pa�
 msgid "This Policy applies to retail and professional clients of %1 dealing in financial products offered by %1."
 msgstr "Esta Política aplica tanto para inversionistas menores como profesionales de %1 que operen productos financieros ofrecidos por %1."
 
+msgid "This Tax Identification Number (TIN) is invalid. You may continue, but to facilitate future payment processes, valid tax information will be required."
+msgstr "Este número de identificación fiscal (NIF) no es válido. Puede continuar, pero para facilitar futuros procesos de pago, se requerirá información fiscal válida."
+
 msgid "This account is disabled"
 msgstr "Esta cuenta está deshabilitada"
 
@@ -11638,8 +11649,8 @@ msgstr "Esta cuenta se encuentra excluida hasta %1"
 msgid "This agreement constitutes the entire agreement between the Parties, and no earlier representation, arrangement, or agreement, whether written or oral, relating to any matter dealt with in this agreement between the Parties, shall have any force or effect before the Commencement Date."
 msgstr "Este Acuerdo constituye la totalidad del acuerdo entre las Partes y ninguna declaración, arreglo o acuerdo anterior, sea escrito u oral, relacionado con cualquier asunto tratado en este acuerdo entre las Partes tendrá vigor o efecto antes de la Fecha de Inicio."
 
-msgid "This agreement is between Binary (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
-msgstr "Este acuerdo es entre Binary (SVG) LLC (más adelante denominada \"la Empresa\" o \"%1\") y el Agente de Pagos (más adelante denominado \"el Agente\"), quienes aceptan estar vinculados por este acuerdo."
+msgid "This agreement is between Deriv (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
+msgstr "Este acuerdo es entre Deriv (SVG) LLC (más adelante denominada \"la Compañía\" o \"%1\") y el Agente de Pagos (más adelante denominado \"el Agente\"), quienes aceptan estar vinculados por este acuerdo."
 
 msgid "This agreement is supplied to the Agent in English. In the event that there is a difference between the English version and any translated versions of this document, the English version shall prevail. The Company shall not be liable for any loss or damage whatsoever caused by an error, inaccuracy, or misspelling and, as a result, by misunderstanding or misinterpretation of any of the terms or conditions or clauses or provisions of any translated versions of this agreement."
 msgstr "Este acuerdo se proporciona al Agente en inglés. En caso que exista una diferencia entre la versión en inglés y las versiones traducidas de este documento, prevalecerá la versión en inglés. La Empresa no será responsable de alguna pérdida o daño causado por un error, inexactitud o falta de ortografía y, como resultado, de un malentendido o mala interpretación de cualquiera de los términos o condiciones o cláusulas o disposiciones de cualquier versión traducida de este acuerdo."
@@ -11658,6 +11669,9 @@ msgstr "Este bono solo está disponible para clientes nuevos. No se aplica a cli
 
 msgid "This bonus will be processed and credited to a client's account when both of the following cases are true:"
 msgstr "Este bono será procesado y acreditado a la cuenta del cliente cuando se cumplan los siguientes casos:"
+
+msgid "This contract is only available on %1DTrader%2."
+msgstr "Este contrato solo está disponible en %1DTrader%2."
 
 msgid "This contract is only available on DTrader.%1%2Go to Dtrader%3 to close or cancel this contract."
 msgstr "Este contrato solo está disponible en DTrader.%1%2Diríjase a Dtrader%3 para cerrar o cancelar este contrato."
@@ -12037,11 +12051,11 @@ msgstr "Opere divisas, índices bursátiles, materias primas y otros en mercados
 msgid "Trade forex and CFDs on our popular multi-asset platform."
 msgstr "Opere forex y CFD en nuestra popular plataforma multiactivos."
 
+msgid "Trade forex and CFDs with a powerful platform recognised as the global standard."
+msgstr ""
+
 msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
 msgstr "Opere forex y contratos por diferencias (CFDs) en MetaTrader 5, una plataforma multiactivos que ofrece excelentes posibilidades para operar y herramientas de análisis técnico."
-
-msgid "Trade forex, CFDs, and binary options with a powerful platform recognised as the global standard."
-msgstr "Opere forex, CFDs y opciones binarias con una poderosa plataforma, reconocida como el estándar internacional."
 
 msgid "Trade in the world's financial markets"
 msgstr "Opere en los mercados financieros del mundo"
@@ -12108,6 +12122,9 @@ msgstr "Los traders deciden comprar un determinado par de divisas si creen que e
 
 msgid "Trading"
 msgstr "Operar"
+
+msgid "Trading Information"
+msgstr "Información sobre trading"
 
 msgid "Trading Limits"
 msgstr "Límites de trading"
@@ -12269,7 +12286,7 @@ msgid "Try Binary Bot"
 msgstr "Pruebe Binary Bot"
 
 msgid "Try Deriv.com now"
-msgstr ""
+msgstr "Pruebe Deriv.com ahora"
 
 msgid "Try SmartCharts"
 msgstr "Pruebe SmartCharts"
@@ -12571,11 +12588,17 @@ msgstr "Código de verificación"
 msgid "Verification code is wrong. Please use the link sent to your email."
 msgstr "El código de verificación es incorrecto. Por favor, haga clic en el enlace enviado a su correo electrónico."
 
+msgid "Verification required"
+msgstr "Verificación requerida"
+
 msgid "Verify Reset Password"
 msgstr "Verificar nueva contraseña"
 
 msgid "Verify and approve clients' deposit and withdrawal requests"
 msgstr "Verificar y aprobar las solicitudes de depósito y retiro de los clientes"
+
+msgid "Verify identity"
+msgstr "Verificar identidad"
 
 msgid "Verify main password"
 msgstr "Verificar contraseña principal"
@@ -12655,17 +12678,32 @@ msgstr "Cuenta virtual"
 msgid "Visa is an international company that supports digital payments around the world, most commonly through their brand of credit and debit cards. For more information, please visit %1."
 msgstr "Visa es una compañía internacional que admite pagos digitales en todo el mundo, comúnmente a través de su marca de tarjetas de crédito y débito. Para más información, visite %1."
 
+msgid "Volatility 10 (1s) Index"
+msgstr "Índice de volatilidad 10 (1s)"
+
 msgid "Volatility 10 Index"
 msgstr "Índice de Volatilidad 10"
+
+msgid "Volatility 100 (1s) Index"
+msgstr "Índice de volatilidad 100 (1s)"
 
 msgid "Volatility 100 Index"
 msgstr "Índice de Volatilidad 100"
 
+msgid "Volatility 25 (1s) Index"
+msgstr "Índice de volatilidad 25 (1s)"
+
 msgid "Volatility 25 Index"
 msgstr "Índice de Volatilidad 25"
 
+msgid "Volatility 50 (1s) Index"
+msgstr "Índice de volatilidad 50 (1s)"
+
 msgid "Volatility 50 Index"
 msgstr "Índice de Volatilidad 50"
+
+msgid "Volatility 75 (1s) Index"
+msgstr "Índice de volatilidad 75 (1s)"
 
 msgid "Volatility 75 Index"
 msgstr "Índice de Volatilidad 75"
@@ -12723,9 +12761,6 @@ msgstr "Creemos que debemos hacer lo correcto en todo momento. Esto incluye serv
 
 msgid "We can't validate your personal details because there is some information missing."
 msgstr "No podemos validar sus datos personales porque falta información."
-
-msgid "We could not recognise your address. You may proceed but please ensure that your address is complete and accurate."
-msgstr "No pudimos reconocer su dirección. Puede continuar, pero asegúrese de que su dirección sea completa y precisa."
 
 msgid "We delete an order with the largest margin reserved."
 msgstr "Eliminamos la orden con el mayor margen reservado."
@@ -12809,7 +12844,7 @@ msgid "We value positive team players who can work together to overcome challeng
 msgstr "Valoramos a las personas positivas que son capaces de trabajar en equipo para superar obstáculos y alcanzar objetivos comunes."
 
 msgid "We were unable to verify your document automatically. We will try to verify your document manually. Please check back in 1-3 days."
-msgstr ""
+msgstr "No pudimos verificar su documento automáticamente. Intentaremos verificar su documento manualmente. Vuelva a consultar en 1-3 días."
 
 msgid "We will continue to close open positions until your margin level becomes higher than the stop out level."
 msgstr "Continuaremos cerrando posociones abiertas hasta que el nivel de su margen sea superior al nivel de stop out."
@@ -13189,12 +13224,6 @@ msgstr "Por qué debería operar con metales preciosos con %1"
 msgid "Why you should use %1 instead of your ISP's default DNS service"
 msgstr "Por qué debería usar %1 en lugar del servicio DNS predeterminado de su ISP"
 
-msgid "Win maximum payout if the exit spot is higher than or equal to the upper barrier."
-msgstr "Gane el pago máximo si el punto de salida es más alto o igual que la barrera superior."
-
-msgid "Win maximum payout if the exit spot is lower than or equal to the lower barrier."
-msgstr "Gane el pago máximo si el punto de salida es menor o igual a la barrera inferior."
-
 msgid "Win payout if consecutive ticks fall successively. Contract is lost when at least one tick rises or is equal to any of the previous ticks."
 msgstr "Gane el pago si ticks consecutivos caen sucesivamente. El contrato se pierde cuando al menos un tick aumenta o es igual a cualquiera de los ticks anteriores."
 
@@ -13212,12 +13241,6 @@ msgstr "Gane el multiplicador por el alto menos el cierre."
 
 msgid "Win the multiplier times the high minus low."
 msgstr "Gane el multiplicador por el alto menos el bajo."
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between exit spot and lower barrier."
-msgstr "Gane hasta el pago máximo si el punto de salida se encuentra entre la barrera superior y la inferior, en proporción a la diferencia entre el punto de salida y la barrera inferior."
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between upper barrier and exit spot."
-msgstr "Gane hasta el pago máximo si el punto de salida se encuentra entre la barrera inferior y la superior, en proporción a la diferencia entre la barrera superior y el punto de salida."
 
 msgid "Windows"
 msgstr "Windows"
@@ -13290,6 +13313,9 @@ msgstr "Retiro: no disponible"
 
 msgid "Withdrawals have been disabled on your account. Please check your email for more details."
 msgstr "Los retiros están deshabilitado en su cuenta. Por favor revise su correo electrónico para más detalles."
+
+msgid "Withdrawals have been disabled on your account. Please wait until your uploaded documents are verified."
+msgstr "Los retiros han sido deshabilitados en su cuenta. Espere hasta que se verifiquen sus documentos cargados."
 
 msgid "Withdrawals may only be paid to the initiator of an account. When a client maintains an account by means of telegraphic deposits, withdrawals are only paid to the holder of the originating bank account, and it is the onus of the client to ensure that account number and name accompany all transfers to the Company. When a client maintains an account by means of credit/debit card deposits, withdrawals are only paid back to the same card."
 msgstr "Los retiros pueden pagarse únicamente al iniciador de una cuenta. Cuando un Cliente mantiene una cuenta por medio de depósitos telegráficos, los retiros se pagan solo al titular de la cuenta bancaria remitente, y es responsabilidad del cliente asegurar que el número de cuenta y el nombre acompañen todas las transferencias a la Empresa. Cuando un cliente mantiene una cuenta mediante depósitos con tarjeta de crédito / débito, los retiros solo se devuelven a la misma tarjeta."
@@ -13616,7 +13642,7 @@ msgid "Your %1proof of identity%2 has expired."
 msgstr "Su %1prueba de identidad%2 ha caducado."
 
 msgid "Your %1proof of identity%2 has not been verified."
-msgstr ""
+msgstr "Su %1prueba de identidad%2 no ha sido verificada."
 
 msgid "Your %1proof of identity%3 and %2proof of address%3 have expired."
 msgstr "Su %1prueba de identidad%3 y %2prueba de dirección%3 han caducado."

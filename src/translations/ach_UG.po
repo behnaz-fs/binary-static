@@ -2,16 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: binary-static\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2020-06-02 06:01\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2020-06-18 06:43\n"
+"Last-Translator: \n"
 "Language-Team: Acholi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Crowdin-Project: binary-static\n"
+"X-Crowdin-Project-ID: 224893\n"
 "X-Crowdin-Language: ach\n"
 "X-Crowdin-File: messages.pot\n"
+"X-Crowdin-File-ID: 111\n"
 "Language: ach_UG\n"
 
 msgid "1"
@@ -521,17 +523,26 @@ msgstr "crwdns66646:0crwdne66646:0"
 msgid "0.3%"
 msgstr "crwdns66650:0crwdne66650:0"
 
-msgid "0.30"
-msgstr "crwdns68146:0crwdne68146:0"
-
 msgid "0.4%"
 msgstr "crwdns87360:0crwdne87360:0"
+
+msgid "0.40"
+msgstr "crwdns121658:0crwdne121658:0"
 
 msgid "0.5%"
 msgstr "crwdns66698:0crwdne66698:0"
 
+msgid "0.50"
+msgstr "crwdns121660:0crwdne121660:0"
+
+msgid "0.70"
+msgstr "crwdns121662:0crwdne121662:0"
+
 msgid "0.75%"
 msgstr "crwdns66652:0crwdne66652:0"
+
+msgid "0.80"
+msgstr "crwdns121664:0crwdne121664:0"
 
 msgid "1 million transactions/day"
 msgstr "crwdns37560:0crwdne37560:0"
@@ -1808,11 +1819,11 @@ msgstr "crwdns54192:0crwdne54192:0"
 msgid "B. Scope"
 msgstr "crwdns37850:0crwdne37850:0"
 
-msgid "BIEL RTS28 for 2017"
-msgstr "crwdns53708:0crwdne53708:0"
-
 msgid "BIEL RTS28 for 2018"
 msgstr "crwdns53710:0crwdne53710:0"
+
+msgid "BIEL RTS28 for 2019"
+msgstr "crwdns121132:0crwdne121132:0"
 
 msgid "BIEL forms part of %1the Investor Compensation Scheme%2 (the \"Scheme\"), which is a rescue fund for investors that are clients of failed investment firms licensed by the MFSA. The Scheme covers 90% of the Company's net liability to a client in respect of investments that qualify for compensation under the Investment Services Act subject to a maximum payment to any one person of €20,000. The Scheme is based on EC Directive 97/9."
 msgstr "crwdns54194:0%1crwdnd54194:0%2crwdne54194:0"
@@ -2033,23 +2044,11 @@ msgstr "crwdns46315:0crwdne46315:0"
 msgid "Binary (IOM) Ltd."
 msgstr "crwdns54228:0crwdne54228:0"
 
-msgid "Binary (SVG) LLC"
-msgstr "crwdns86338:0crwdne86338:0"
-
 msgid "Binary (SVG) LLC,"
 msgstr "crwdns86340:0crwdne86340:0"
 
-msgid "Binary (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
-msgstr "crwdns86342:0crwdne86342:0"
-
-msgid "Binary (V) Ltd"
-msgstr "crwdns37898:0crwdne37898:0"
-
 msgid "Binary (V) Ltd,"
 msgstr "crwdns50461:0crwdne50461:0"
-
-msgid "Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
-msgstr "crwdns44628:0%1crwdnd44628:0%2crwdne44628:0"
 
 msgid "Binary Bot"
 msgstr "crwdns37900:0crwdne37900:0"
@@ -2059,9 +2058,6 @@ msgstr "crwdns37901:0crwdne37901:0"
 
 msgid "Binary Coin"
 msgstr "crwdns52940:0crwdne52940:0"
-
-msgid "Binary Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
-msgstr "crwdns45973:0crwdne45973:0"
 
 msgid "Binary Investments (Europe) Limited is entitled to provide services in another EU Member State through EU passporting rights. Refer to the map below for the list of EU countries that have access to %1 via EU passporting rights - freedom to provide cross border services."
 msgstr "crwdns37910:0%1crwdne37910:0"
@@ -2642,14 +2638,14 @@ msgstr "crwdns38050:0crwdne38050:0"
 msgid "Clients are also advised that their rights may be prejudiced if they provide the wrong information as the Company would not be in a position to act in their best interests."
 msgstr "crwdns54294:0crwdne54294:0"
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Binary (V) Ltd. %1 is not available in the Republic of Vanuatu."
-msgstr "crwdns56108:0%1crwdne56108:0"
-
 msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (BVI) Ltd. %1 is not available in the British Virgin Islands."
 msgstr "crwdns120728:0%1crwdne120728:0"
 
-msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Binary (SVG) LLC."
-msgstr "crwdns86344:0crwdne86344:0"
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, Hong Kong) will have their FX and CFD Metatrader 5 account opened with Deriv (V) Ltd. %1 is not available in the Republic of Vanuatu."
+msgstr "crwdns121666:0%1crwdne121666:0"
+
+msgid "Clients from the rest of the world (excluding certain countries such as the USA, Canada, and Hong Kong) will have their account opened with Deriv (SVG) LLC."
+msgstr "crwdns121198:0crwdne121198:0"
 
 msgid "Clients from the rest of the world (excluding certain jurisdictions such as the USA, Canada, and the European Union) who wish to trade CFDs will have their MetaTrader 5 account opened with Binary (FX) Ltd. %1 is not available in Malaysia."
 msgstr "crwdns117108:0%1crwdne117108:0"
@@ -3517,6 +3513,21 @@ msgstr "crwdns120732:0crwdne120732:0"
 
 msgid "Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands. Licensed and regulated by the British Virgin Islands Financial Services Commission - %1view licence%2."
 msgstr "crwdns120734:0%1crwdnd120734:0%2crwdne120734:0"
+
+msgid "Deriv (SVG) LLC"
+msgstr "crwdns121200:0crwdne121200:0"
+
+msgid "Deriv (SVG) LLC, Hinds Buildings, Kingstown, St. Vincent and the Grenadines; company number 25299 BC 2019."
+msgstr "crwdns121202:0crwdne121202:0"
+
+msgid "Deriv (V) Ltd"
+msgstr "crwdns121668:0crwdne121668:0"
+
+msgid "Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
+msgstr "crwdns121670:0%1crwdnd121670:0%2crwdne121670:0"
+
+msgid "Deriv Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
+msgstr "crwdns121134:0crwdne121134:0"
 
 msgid "Deriv Group members are sometimes referred to collectively as \"%1\" or \"the Company\"."
 msgstr "crwdns118204:0%1crwdne118204:0"
@@ -5831,8 +5842,8 @@ msgstr "crwdns53740:0%1licrwdnd53740:0%2crwdne53740:0"
 msgid "In the Isle of Man and the UK, Synthetic Indices are offered by Binary (IOM) Ltd., First Floor, Millennium House, Victoria Road, Douglas, IM2 4RW, Isle of Man, British Isles; licensed and regulated respectively by (1) the Gambling Supervision Commission in the Isle of Man (current licence issued on 31 August 2017) and by (2) the Gambling Commission in the UK (licence %1reference no: 39172%2)."
 msgstr "crwdns70370:0%1crwdnd70370:0%2crwdne70370:0"
 
-msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Binary (SVG) LLC, Binary (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
-msgstr "crwdns120736:0crwdne120736:0"
+msgid "In the UK, our clients trade through Binary (IOM) Ltd and Binary Investments (Europe) Ltd. In the Isle of Man, they trade through Binary (IOM) Ltd. In the European Union (except UK), they trade through Binary (Europe) Ltd and Binary Investments (Europe) Ltd. In the rest of the world, they trade through Deriv (SVG) LLC, Deriv (V) Ltd, Deriv (BVI) Ltd and Binary (FX) Ltd."
+msgstr "crwdns121672:0crwdne121672:0"
 
 msgid "In the case of a Limit Order, the client acknowledges that the Company will endeavour to fill the Order at a level that is the same or better than the Limit the client has specified, subject to the availability of the Limit Price."
 msgstr "crwdns56262:0crwdne56262:0"
@@ -6872,12 +6883,6 @@ msgstr "crwdns52802:0%1crwdne52802:0"
 msgid "Matches/Differs"
 msgstr "crwdns39158:0crwdne39158:0"
 
-msgid "Maximum Payout"
-msgstr "crwdns45860:0crwdne45860:0"
-
-msgid "Maximum Profit"
-msgstr "crwdns45861:0crwdne45861:0"
-
 msgid "Maximum account cash balance"
 msgstr "crwdns39164:0crwdne39164:0"
 
@@ -7352,12 +7357,6 @@ msgstr "crwdns39268:0crwdne39268:0"
 msgid "No party shall be deemed liable for a partial or complete failure to meet its obligations under this Agreement, in case of force majeure events, including but not limited to civil war, unrest, insurrection, international intervention, any governmental actions, exchange controls, nationalisations, devaluations, forfeitures, natural disasters, act of God, and other inevitable or unforeseeable, unanticipated, and unpredicted events not depending on the will of the parties."
 msgstr "crwdns54806:0crwdne54806:0"
 
-msgid "No payout if exit spot is above or equal to the upper barrier."
-msgstr "crwdns45862:0crwdne45862:0"
-
-msgid "No payout if exit spot is below or equal to the lower barrier."
-msgstr "crwdns45863:0crwdne45863:0"
-
 msgid "No person shall abuse this site for the purpose of money laundering. The Company employs best-practice anti-money laundering procedures. All transactions are checked to prevent money laundering, which may have several effects on clients. The Company reserves the right to refuse to do business with, to discontinue to do business with, and to reverse the transactions of clients who do not accept or adhere to these anti-money laundering processes. Acceptable funds should not originate from criminal activity. The Company is bound to report suspicious transactions to relevant authorities."
 msgstr "crwdns54808:0crwdne54808:0"
 
@@ -7415,8 +7414,8 @@ msgstr "crwdns90010:0crwdne90010:0"
 msgid "Note: For any enquiries regarding disabled or excluded accounts, please contact %1Customer Support%2."
 msgstr "crwdns53426:0%1Ccrwdnd53426:0%2crwdne53426:0"
 
-msgid "Note: Payment Agent transfers are only available for accounts registered with Binary (SVG) LLC. Transactions are accepted only in US dollars."
-msgstr "crwdns86350:0crwdne86350:0"
+msgid "Note: Payment Agent transfers are only available for accounts registered with Deriv (SVG) LLC. Transactions are accepted only in US dollars."
+msgstr "crwdns121206:0crwdne121206:0"
 
 msgid "Note: You are limited to one fiat currency account. The currency of your fiat account can be changed before you deposit into your fiat account for the first time or create an MT5 account. You may also open one account for each supported cryptocurrency."
 msgstr "crwdns53248:0crwdne53248:0"
@@ -7775,8 +7774,8 @@ msgstr "crwdns46433:0crwdne46433:0"
 msgid "Our website uses cookies to give you the best user experience. For more information, %1view our policy%2."
 msgstr "crwdns53434:0%1crwdnd53434:0%2crwdne53434:0"
 
-msgid "Outside the EU, financial products are offered by Binary (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Binary (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
-msgstr "crwdns120738:0%1crwdnd120738:0%2crwdnd120738:0%3licrwdnd120738:0%4crwdnd120738:0%5licrwdnd120738:0%6crwdne120738:0"
+msgid "Outside the EU, financial products are offered by Deriv (SVG) LLC, Hinds Building, Kingstown, St. Vincent and the Grenadines; Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, regulated by the Vanuatu Financial Services Commission (%1view licence%2); Deriv (BVI) Ltd, Kingston Chambers, P.O. Box 173, Road Town, Tortola, British Virgin Islands, regulated by the British Virgin Islands Financial Services Commission (%3licence no. SIBA/L/18/1114%4); and Binary (FX) Ltd., Lot No. F16, First Floor, Paragon Labuan, Jalan Tun Mustapha, 87000 Labuan, Malaysia, regulated by the Labuan Financial Services Authority to carry on a money-broking business (%5licence no. MB/18/0024%6)."
+msgstr "crwdns121674:0%1crwdnd121674:0%2crwdnd121674:0%3licrwdnd121674:0%4crwdnd121674:0%5licrwdnd121674:0%6crwdne121674:0"
 
 msgid "Outstanding written and verbal communication skills and excellent command of English"
 msgstr "crwdns89772:0crwdne89772:0"
@@ -8170,6 +8169,9 @@ msgstr "crwdns52730:0crwdne52730:0"
 
 msgid "Please ensure that you have the Telegram app installed on your device."
 msgstr "crwdns51280:0crwdne51280:0"
+
+msgid "Please ensure that your address is complete and accurate."
+msgstr "crwdns121780:0crwdne121780:0"
 
 msgid "Please enter a valid Login ID."
 msgstr "crwdns50918:0crwdne50918:0"
@@ -8725,6 +8727,12 @@ msgstr "crwdns120742:0crwdne120742:0"
 
 msgid "RTS 28"
 msgstr "crwdns53718:0crwdne53718:0"
+
+msgid "Range Break 100 Index"
+msgstr "crwdns121676:0crwdne121676:0"
+
+msgid "Range Break 200 Index"
+msgstr "crwdns121678:0crwdne121678:0"
 
 msgid "Range break 100 breaks through the range on average once every 100 times that it hits the border."
 msgstr "crwdns119282:0crwdne119282:0"
@@ -11627,6 +11635,9 @@ msgstr "crwdns57002:0crwdne57002:0"
 msgid "This Policy applies to retail and professional clients of %1 dealing in financial products offered by %1."
 msgstr "crwdns40150:0%1crwdnd40150:0%1crwdne40150:0"
 
+msgid "This Tax Identification Number (TIN) is invalid. You may continue, but to facilitate future payment processes, valid tax information will be required."
+msgstr "crwdns121128:0crwdne121128:0"
+
 msgid "This account is disabled"
 msgstr "crwdns41965:0crwdne41965:0"
 
@@ -11636,8 +11647,8 @@ msgstr "crwdns41966:0%1crwdne41966:0"
 msgid "This agreement constitutes the entire agreement between the Parties, and no earlier representation, arrangement, or agreement, whether written or oral, relating to any matter dealt with in this agreement between the Parties, shall have any force or effect before the Commencement Date."
 msgstr "crwdns66828:0crwdne66828:0"
 
-msgid "This agreement is between Binary (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
-msgstr "crwdns86354:0%1crwdne86354:0"
+msgid "This agreement is between Deriv (SVG) LLC (hereinafter referred to as \"the Company\" or \"%1\") and Payment Agent (hereinafter referred to as \"the Agent\"), both of whom agree to be bound by this agreement."
+msgstr "crwdns121210:0%1crwdne121210:0"
 
 msgid "This agreement is supplied to the Agent in English. In the event that there is a difference between the English version and any translated versions of this document, the English version shall prevail. The Company shall not be liable for any loss or damage whatsoever caused by an error, inaccuracy, or misspelling and, as a result, by misunderstanding or misinterpretation of any of the terms or conditions or clauses or provisions of any translated versions of this agreement."
 msgstr "crwdns55766:0crwdne55766:0"
@@ -11656,6 +11667,9 @@ msgstr "crwdns40152:0crwdne40152:0"
 
 msgid "This bonus will be processed and credited to a client's account when both of the following cases are true:"
 msgstr "crwdns55774:0crwdne55774:0"
+
+msgid "This contract is only available on %1DTrader%2."
+msgstr "crwdns121122:0%1crwdnd121122:0%2crwdne121122:0"
 
 msgid "This contract is only available on DTrader.%1%2Go to Dtrader%3 to close or cancel this contract."
 msgstr "crwdns86041:0%1crwdnd86041:0%2Gcrwdnd86041:0%3crwdne86041:0"
@@ -12035,11 +12049,11 @@ msgstr "crwdns90118:0crwdne90118:0"
 msgid "Trade forex and CFDs on our popular multi-asset platform."
 msgstr "crwdns90120:0crwdne90120:0"
 
+msgid "Trade forex and CFDs with a powerful platform recognised as the global standard."
+msgstr "crwdns121782:0crwdne121782:0"
+
 msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
 msgstr "crwdns90122:0crwdne90122:0"
-
-msgid "Trade forex, CFDs, and binary options with a powerful platform recognised as the global standard."
-msgstr "crwdns90124:0crwdne90124:0"
 
 msgid "Trade in the world's financial markets"
 msgstr "crwdns42451:0crwdne42451:0"
@@ -12106,6 +12120,9 @@ msgstr "crwdns42463:0crwdne42463:0"
 
 msgid "Trading"
 msgstr "crwdns40255:0crwdne40255:0"
+
+msgid "Trading Information"
+msgstr "crwdns121124:0crwdne121124:0"
 
 msgid "Trading Limits"
 msgstr "crwdns40257:0crwdne40257:0"
@@ -12569,11 +12586,17 @@ msgstr "crwdns46463:0crwdne46463:0"
 msgid "Verification code is wrong. Please use the link sent to your email."
 msgstr "crwdns40357:0crwdne40357:0"
 
+msgid "Verification required"
+msgstr "crwdns121680:0crwdne121680:0"
+
 msgid "Verify Reset Password"
 msgstr "crwdns44586:0crwdne44586:0"
 
 msgid "Verify and approve clients' deposit and withdrawal requests"
 msgstr "crwdns53512:0crwdne53512:0"
+
+msgid "Verify identity"
+msgstr "crwdns121682:0crwdne121682:0"
 
 msgid "Verify main password"
 msgstr "crwdns40358:0crwdne40358:0"
@@ -12653,17 +12676,32 @@ msgstr "crwdns40384:0crwdne40384:0"
 msgid "Visa is an international company that supports digital payments around the world, most commonly through their brand of credit and debit cards. For more information, please visit %1."
 msgstr "crwdns52814:0%1crwdne52814:0"
 
+msgid "Volatility 10 (1s) Index"
+msgstr "crwdns121684:0crwdne121684:0"
+
 msgid "Volatility 10 Index"
 msgstr "crwdns46507:0crwdne46507:0"
+
+msgid "Volatility 100 (1s) Index"
+msgstr "crwdns121686:0crwdne121686:0"
 
 msgid "Volatility 100 Index"
 msgstr "crwdns46508:0crwdne46508:0"
 
+msgid "Volatility 25 (1s) Index"
+msgstr "crwdns121688:0crwdne121688:0"
+
 msgid "Volatility 25 Index"
 msgstr "crwdns46509:0crwdne46509:0"
 
+msgid "Volatility 50 (1s) Index"
+msgstr "crwdns121690:0crwdne121690:0"
+
 msgid "Volatility 50 Index"
 msgstr "crwdns46510:0crwdne46510:0"
+
+msgid "Volatility 75 (1s) Index"
+msgstr "crwdns121692:0crwdne121692:0"
 
 msgid "Volatility 75 Index"
 msgstr "crwdns46511:0crwdne46511:0"
@@ -12721,9 +12759,6 @@ msgstr "crwdns46443:0crwdne46443:0"
 
 msgid "We can't validate your personal details because there is some information missing."
 msgstr "crwdns86005:0crwdne86005:0"
-
-msgid "We could not recognise your address. You may proceed but please ensure that your address is complete and accurate."
-msgstr "crwdns52682:0crwdne52682:0"
 
 msgid "We delete an order with the largest margin reserved."
 msgstr "crwdns90170:0crwdne90170:0"
@@ -13187,12 +13222,6 @@ msgstr "crwdns42526:0%1crwdne42526:0"
 msgid "Why you should use %1 instead of your ISP's default DNS service"
 msgstr "crwdns46525:0%1crwdne46525:0"
 
-msgid "Win maximum payout if the exit spot is higher than or equal to the upper barrier."
-msgstr "crwdns45879:0crwdne45879:0"
-
-msgid "Win maximum payout if the exit spot is lower than or equal to the lower barrier."
-msgstr "crwdns45880:0crwdne45880:0"
-
 msgid "Win payout if consecutive ticks fall successively. Contract is lost when at least one tick rises or is equal to any of the previous ticks."
 msgstr "crwdns52988:0crwdne52988:0"
 
@@ -13210,12 +13239,6 @@ msgstr "crwdns43528:0crwdne43528:0"
 
 msgid "Win the multiplier times the high minus low."
 msgstr "crwdns43529:0crwdne43529:0"
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between exit spot and lower barrier."
-msgstr "crwdns45881:0crwdne45881:0"
-
-msgid "Win up to maximum payout if exit spot is between lower and upper barrier, in proportion to the difference between upper barrier and exit spot."
-msgstr "crwdns45882:0crwdne45882:0"
 
 msgid "Windows"
 msgstr "crwdns42527:0crwdne42527:0"
@@ -13288,6 +13311,9 @@ msgstr "crwdns41933:0crwdne41933:0"
 
 msgid "Withdrawals have been disabled on your account. Please check your email for more details."
 msgstr "crwdns44640:0crwdne44640:0"
+
+msgid "Withdrawals have been disabled on your account. Please wait until your uploaded documents are verified."
+msgstr "crwdns121212:0crwdne121212:0"
 
 msgid "Withdrawals may only be paid to the initiator of an account. When a client maintains an account by means of telegraphic deposits, withdrawals are only paid to the holder of the originating bank account, and it is the onus of the client to ensure that account number and name accompany all transfers to the Company. When a client maintains an account by means of credit/debit card deposits, withdrawals are only paid back to the same card."
 msgstr "crwdns55958:0crwdne55958:0"
