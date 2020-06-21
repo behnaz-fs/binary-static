@@ -1311,6 +1311,10 @@ label + input {
     height: 35px;
     width: 35px; }
 
+#footer .trustlogo2 {
+  float: right;
+  width: 175px; }
+
 #footer .icon-row {
   padding-top: 10px;
   padding-bottom: 14px; }
