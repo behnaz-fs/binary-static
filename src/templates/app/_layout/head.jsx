@@ -28,6 +28,7 @@ const Head = () => (
 
         <link rel='manifest' href={`${it.root_url}manifest.json`} />
         <script type='text/javascript' src={`${it.root_url}pushwoosh-web-notifications.js`} async />
+        <script type='text/javascript' src='//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js' async />
 
         <Favicons />
 
