@@ -141,7 +141,7 @@ const Footer = () => (
                                 ]}
                             />
                             <div className='trustlogo2'>
-                                <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b757fa0340045cd0c938' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='25px' data-style-width='200px'>
+                                <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b757fa0340045cd0c938' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='25px' data-style-width='100%'>
                                     <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                                 </div>
                             </div>
@@ -199,7 +199,7 @@ const Footer = () => (
                                 ]}
                             />
                             <div className='trustlogo2'>
-                                <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b757fa0340045cd0c938' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='25px' data-style-width='200px'>
+                                <div className='trustpilot-widget' data-locale='en-US' data-template-id='5419b757fa0340045cd0c938' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='25px' data-style-width='100%'>
                                     <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
                                 </div>
                             </div>
