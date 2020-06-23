@@ -1262,8 +1262,7 @@ label + input {
           flex-direction: column-reverse; }
 
 #footer .social-icons {
-  margin-left: auto;
-  margin-right: -15px; }
+  margin-left: auto; }
   #footer .social-icons > *:not(:first-child) {
     margin-left: 10px; }
   #footer .social-icons img {
@@ -1272,9 +1271,6 @@ label + input {
 
 #footer .trustlogo2 {
   float: right; }
-
-#footer .tp-widget-wrapper {
-  text-align: right; }
 
 #footer .icon-row {
   padding-top: 10px;
@@ -1376,8 +1372,9 @@ label + input {
     width: 105px; }
   #footer .age-restriction-sign {
     margin-right: 0; }
-  #footer .tp-widget-wrapper {
-    text-align: center; } }
+  #footer .trustlogo2 {
+    float: unset;
+    width: 180px; } }
 
 @media screen and (max-width: 380px) {
   #footer .regulation-logos .vanuatu-icon {
