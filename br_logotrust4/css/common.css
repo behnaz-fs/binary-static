@@ -1373,8 +1373,7 @@ label + input {
   #footer .age-restriction-sign {
     margin-right: 0; }
   #footer .trustlogo2 {
-    float: unset;
-    width: 180px; } }
+    float: unset; } }
 
 @media screen and (max-width: 380px) {
   #footer .regulation-logos .vanuatu-icon {
