@@ -1270,7 +1270,8 @@ label + input {
     width: 35px; }
 
 #footer .trustlogo2 {
-  float: right; }
+  float: right;
+  width: 180px; }
 
 #footer .icon-row {
   padding-top: 10px;
@@ -1354,26 +1355,28 @@ label + input {
     margin-bottom: 0; }
 
 @media screen and (max-width: 790px) {
-  #footer .icon-row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    #footer .icon-row > * {
-      margin-right: 0;
-      margin-bottom: 20px; }
-  #footer .social-icons {
-    margin-left: 0; }
-  #footer .regulation-logos .vanuatu-icon {
-    width: 85px; }
-  #footer .regulation-logos .bvi-icon {
-    width: 60px; }
-  #footer .regulation-logos .labuan-icon {
-    width: 105px; }
-  #footer .age-restriction-sign {
-    margin-right: 0; }
-  #footer .trustlogo2 {
-    float: unset; } }
+  #footer {
+    /*.trustlogo2 {
+            float: unset;
+        }*/ }
+    #footer .icon-row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      #footer .icon-row > * {
+        margin-right: 0;
+        margin-bottom: 20px; }
+    #footer .social-icons {
+      margin-left: 0; }
+    #footer .regulation-logos .vanuatu-icon {
+      width: 85px; }
+    #footer .regulation-logos .bvi-icon {
+      width: 60px; }
+    #footer .regulation-logos .labuan-icon {
+      width: 105px; }
+    #footer .age-restriction-sign {
+      margin-right: 0; } }
 
 @media screen and (max-width: 380px) {
   #footer .regulation-logos .vanuatu-icon {
