@@ -1273,6 +1273,9 @@ label + input {
 #footer .trustlogo2 {
   float: right; }
 
+#footer .tp-widget-wrapper {
+  text-align: right; }
+
 #footer .icon-row {
   padding-top: 10px;
   padding-bottom: 14px; }
@@ -1372,7 +1375,9 @@ label + input {
   #footer .regulation-logos .labuan-icon {
     width: 105px; }
   #footer .age-restriction-sign {
-    margin-right: 0; } }
+    margin-right: 0; }
+  #footer .tp-widget-wrapper {
+    text-align: center; } }
 
 @media screen and (max-width: 380px) {
   #footer .regulation-logos .vanuatu-icon {
