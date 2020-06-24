@@ -404,11 +404,9 @@ const Home = () => {
                         </div>
                     </div>
                     <SeparatorLine className='gr-bottom-30' show_mobile />
-                </div>
-            </div>
-            <div >
-                <div className='trustpilot-widget' data-locale='en-US' data-template-id='53aa8912dec7e10d38f59f36' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='150px' data-style-width='100%' data-theme='light' data-stars='4,5' data-review-languages='en'>
-                    <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
+                    <div className='trustpilot-widget' data-locale='en-US' data-template-id='53aa8912dec7e10d38f59f36' data-businessunit-id='58dc92220000ff00059f7dc4' data-style-height='150px' data-style-width='100%' data-theme='light' data-stars='4,5' data-review-languages='en'>
+                        <a href='https://www.trustpilot.com/review/binary.com' target='_blank' rel='noopener noreferrer'>Trustpilot</a>
+                    </div>
                 </div>
             </div>
         </React.Fragment>
