@@ -2479,9 +2479,6 @@ msgstr ""
 msgid "Charting platforms"
 msgstr ""
 
-msgid "Check address"
-msgstr ""
-
 msgid "Check our systems against the latest attacks, vulnerabilities, and mitigations"
 msgstr ""
 
@@ -3511,9 +3508,6 @@ msgstr ""
 msgid "Deriv (V) Ltd, Govant Building, Port Vila, PO Box 1276, Vanuatu, Republic of Vanuatu. Licensed and regulated by the Vanuatu Financial Services Commission - %1view licence%2."
 msgstr ""
 
-msgid "Deriv Group Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
-msgstr ""
-
 msgid "Deriv Group members are sometimes referred to collectively as \"%1\" or \"the Company\"."
 msgstr ""
 
@@ -3524,6 +3518,9 @@ msgid "Deriv Limited"
 msgstr ""
 
 msgid "Deriv Limited, with registered office at 47 Esplanade, St Helier, Jersey JE1 0BD, Channel Islands, is the holding company for the subsidiaries listed below."
+msgstr ""
+
+msgid "Deriv Services Sdn. Bhd., C-13, iTech Tower, Jalan Impact, Cyber 6, 63000 Cyberjaya, Selangor Darul Ehsan"
 msgstr ""
 
 msgid "Deriv.com launched"
@@ -5246,9 +5243,6 @@ msgid "However, Introducing Brokers contracted with Binary Investments (Europe) 
 msgstr ""
 
 msgid "However, if the asset price falls by 10 points, that represents a 10 USD loss for you."
-msgstr ""
-
-msgid "However, we will require further documentation to authenticate your account in the future."
 msgstr ""
 
 msgid "However, with leverage you can purchase those 100 units at a fraction of the typical cost – depending on the leverage afforded to you by your broker or trading platform."
@@ -8155,6 +8149,9 @@ msgstr ""
 msgid "Please ensure that you have the Telegram app installed on your device."
 msgstr ""
 
+msgid "Please ensure that your address is complete and accurate."
+msgstr ""
+
 msgid "Please enter a valid Login ID."
 msgstr ""
 
@@ -9242,6 +9239,9 @@ msgid "Security testing opportunities"
 msgstr ""
 
 msgid "Security,"
+msgstr ""
+
+msgid "Select %1Account opening reason%2."
 msgstr ""
 
 msgid "Select %1Citizenship%2."
@@ -12031,10 +12031,10 @@ msgstr ""
 msgid "Trade forex and CFDs on our popular multi-asset platform."
 msgstr ""
 
-msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
+msgid "Trade forex and CFDs with a powerful platform recognised as the global standard."
 msgstr ""
 
-msgid "Trade forex, CFDs, and binary options with a powerful platform recognised as the global standard."
+msgid "Trade forex and contracts for difference (CFDs) on MetaTrader 5 – a multi-asset platform that offers outstanding trading possibilities and technical analysis tools."
 msgstr ""
 
 msgid "Trade in the world's financial markets"
@@ -12740,9 +12740,6 @@ msgid "We believe that we should always do the right thing. This includes servin
 msgstr ""
 
 msgid "We can't validate your personal details because there is some information missing."
-msgstr ""
-
-msgid "We could not recognise your address. You may proceed but please ensure that your address is complete and accurate."
 msgstr ""
 
 msgid "We delete an order with the largest margin reserved."
@@ -13667,9 +13664,6 @@ msgid "Your account security is of paramount importance to us. Please consider t
 msgstr ""
 
 msgid "Your account will be opened with %1, and will be subject to the jurisdiction and laws of %2."
-msgstr ""
-
-msgid "Your address has been recognised by our system."
 msgstr ""
 
 msgid "Your application to be treated as a professional client is being processed."
