@@ -22945,6 +22945,10 @@ var _common_functions = __webpack_require__(/*! ../../../_common/common_function
 
 var _localize = __webpack_require__(/*! ../../../_common/localize */ "./src/javascript/_common/localize.js");
 
+var _client = __webpack_require__(/*! ../../base/client */ "./src/javascript/app/base/client.js");
+
+var _client2 = _interopRequireDefault(_client);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23048,17 +23052,22 @@ var Markets = (_temp = _class = function (_React$Component) {
 
         var market_symbol = void 0,
             underlying_symbol = void 0;
-        var login_id = localStorage.getItem('active_loginid');
-        if (localStorage.getItem(login_id + '_selected_market') && login_id) {
-            market_symbol = localStorage.getItem(login_id + '_selected_market');
+        // const login_id = localStorage.getItem('active_loginid');
+        var login_id = _client2.default.get('loginid');
+        // let market_symbol_pre = localStorage.getItem(`${login_id}_selected_market`);
+        var market_symbol_pre = _client2.default.get(login_id + '_selected_market');
+        if (market_symbol_pre && login_id) {
+            market_symbol = market_symbol_pre;
         } else {
             market_symbol = _defaults2.default.get('market');
         }
         _this.markets = _symbols2.default.markets();
 
         _this.underlyings = _symbols2.default.getAllSymbols() || {};
-        if (localStorage.getItem(login_id + '_selected_underlying') && login_id) {
-            underlying_symbol = localStorage.getItem(login_id + '_selected_underlying');
+        // let underlying_symbol_pre = localStorage.getItem(`${login_id}_selected_underlying`);
+        var underlying_symbol_pre = _client2.default.get(login_id + '_selected_underlying');
+        if (underlying_symbol_pre && login_id) {
+            underlying_symbol = underlying_symbol_pre;
         }
         if (!underlying_symbol || !_this.underlyings[underlying_symbol]) {
             var submarket = Object.keys(_this.markets[market_symbol].submarkets).sort(_active_symbols.sortSubmarket)[0];
@@ -23356,10 +23365,13 @@ var Markets = (_temp = _class = function (_React$Component) {
 
     this.onUnderlyingClick = function (underlying_symbol, market_symbol) {
 
-        var login_id = localStorage.getItem('active_loginid');
+        // const login_id = localStorage.getItem('active_loginid');
+        var login_id = _client2.default.get('loginid');
         if (login_id) {
-            localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
-            localStorage.setItem(login_id + '_selected_market', market_symbol);
+            // localStorage.setItem(`${login_id}_selected_underlying`, underlying_symbol);
+            // localStorage.setItem(`${login_id}_selected_market`, market_symbol);
+            _client2.default.set(login_id + '_selected_underlying', underlying_symbol);
+            _client2.default.set(login_id + '_selected_underlying', market_symbol);
         } else {
             _defaults2.default.set('underlying', underlying_symbol);
             _defaults2.default.set('market', market_symbol);
