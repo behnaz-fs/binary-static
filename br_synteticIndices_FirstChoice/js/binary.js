@@ -23049,16 +23049,18 @@ var Markets = (_temp = _class = function (_React$Component) {
         var market_symbol = void 0,
             underlying_symbol = void 0;
         var login_id = localStorage.getItem('active_loginid');
-        if (localStorage.getItem(login_id + '_selected_market') && login_id) {
-            market_symbol = localStorage.getItem(login_id + '_selected_market');
+        var market_symbol_pre = localStorage.getItem(login_id + '_selected_market');
+        if (market_symbol_pre && login_id) {
+            market_symbol = market_symbol_pre;
         } else {
             market_symbol = _defaults2.default.get('market');
         }
         _this.markets = _symbols2.default.markets();
 
         _this.underlyings = _symbols2.default.getAllSymbols() || {};
-        if (localStorage.getItem(login_id + '_selected_underlying') && login_id) {
-            underlying_symbol = localStorage.getItem(login_id + '_selected_underlying');
+        var underlying_symbol_pre = localStorage.getItem(login_id + '_selected_underlying');
+        if (underlying_symbol_pre && login_id) {
+            underlying_symbol = underlying_symbol_pre;
         }
         if (!underlying_symbol || !_this.underlyings[underlying_symbol]) {
             var submarket = Object.keys(_this.markets[market_symbol].submarkets).sort(_active_symbols.sortSubmarket)[0];
