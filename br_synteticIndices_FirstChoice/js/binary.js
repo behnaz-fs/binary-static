@@ -26794,7 +26794,7 @@ var Authenticate = function () {
                         resolve({ error: response.error });
                         return;
                     }
-                    var token = response.service_token.token;
+                    var token = response.service_token.onfido.token;
                     var in_90_minutes = 1 / 16;
                     Cookies.set('onfido_token', token, {
                         expires: in_90_minutes,
@@ -33372,6 +33372,7 @@ var MetaTraderUI = function () {
         }
 
         if (accounts_info[acc_type].info) {
+            var is_demo = /demo/.test(accounts_info[acc_type].account_type);
             // Update account info
             $detail.find('.acc-info div[data]').map(function () {
                 var key = $(this).attr('data');
@@ -33380,11 +33381,17 @@ var MetaTraderUI = function () {
                     balance: function balance() {
                         return isNaN(info) ? '' : Currency.formatMoney(MetaTraderConfig.getCurrency(acc_type), +info);
                     },
+                    broker: function broker() {
+                        return 'Deriv Limited';
+                    },
                     display_login: function display_login() {
-                        return info + ' (' + (/demo/.test(accounts_info[acc_type].account_type) ? localize('Demo Account') : localize('Real-Money Account')) + ')';
+                        return info + ' (' + (is_demo ? localize('Demo Account') : localize('Real-Money Account')) + ')';
                     },
                     leverage: function leverage() {
                         return '1:' + info;
+                    },
+                    server: function server() {
+                        return 'Deriv-' + (is_demo ? 'Demo' : 'Server');
                     }
                 };
                 $(this).html(typeof mapping[key] === 'function' ? mapping[key]() : info);
