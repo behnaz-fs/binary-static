@@ -68,18 +68,21 @@ const List = ({
 class Markets extends React.Component {
     constructor (props) {
         super(props);
-        let market_symbol,underlying_symbol;
+        let market_symbol,
+            underlying_symbol;
         const login_id = localStorage.getItem('active_loginid');
-        if (localStorage.getItem(`${login_id}_selected_market`) && login_id) {
-            market_symbol = localStorage.getItem(`${login_id}_selected_market`);
+        const market_symbol_pre = localStorage.getItem(`${login_id}_selected_market`);
+        if (market_symbol_pre && login_id) {
+            market_symbol = market_symbol_pre;
         } else {
             market_symbol = Defaults.get('market');
         }
         this.markets = Symbols.markets();
 
         this.underlyings = Symbols.getAllSymbols() || {};
-        if (localStorage.getItem(`${login_id}_selected_underlying`) && login_id) {
-            underlying_symbol = localStorage.getItem(`${login_id}_selected_underlying`);
+        const underlying_symbol_pre = localStorage.getItem(`${login_id}_selected_underlying`);
+        if (underlying_symbol_pre && login_id) {
+            underlying_symbol = underlying_symbol_pre;
         }
         if (!underlying_symbol || !this.underlyings[underlying_symbol]) {
             const submarket = Object.keys(this.markets[market_symbol].submarkets).sort(sortSubmarket)[0];
@@ -208,7 +211,7 @@ class Markets extends React.Component {
 
         const login_id = localStorage.getItem('active_loginid');
         if (login_id) {
-            localStorage.setItem(`${login_id}_selected_underlying`,underlying_symbol);
+            localStorage.setItem(`${login_id}_selected_underlying`, underlying_symbol);
             localStorage.setItem(`${login_id}_selected_market`, market_symbol);
         } else {
             Defaults.set('underlying', underlying_symbol);
