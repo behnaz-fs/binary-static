@@ -23053,7 +23053,7 @@ var Markets = (_temp = _class = function (_React$Component) {
         var market_symbol = void 0,
             underlying_symbol = void 0;
         // const login_id = localStorage.getItem('active_loginid');
-        var login_id = _client2.default.get('active_loginid');
+        var login_id = _client2.default.get('loginid');
         // let market_symbol_pre = localStorage.getItem(`${login_id}_selected_market`);
         var market_symbol_pre = _client2.default.get(login_id + '_selected_market');
         if (market_symbol_pre && login_id) {
