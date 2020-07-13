@@ -23364,13 +23364,13 @@ var Markets = (_temp = _class = function (_React$Component) {
         // const login_id = localStorage.getItem('active_loginid');
         var login_id = localStorage.getItem('active_loginid') ? localStorage.getItem('active_loginid') : 'logout';
         // if (login_id) {
-        if (login_id === 'logout') {
-            localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
-            localStorage.setItem(login_id + '_selected_market', market_symbol);
-        } else {
-            _defaults2.default.set('underlying', underlying_symbol);
-            _defaults2.default.set('market', market_symbol);
-        }
+        // if (login_id === 'logout') {
+        localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
+        localStorage.setItem(login_id + '_selected_market', market_symbol);
+        // } else {
+        //    Defaults.set('underlying', underlying_symbol);
+        //    Defaults.set('market', market_symbol);
+        // }
         _this2.setState({
             market: {
                 symbol: market_symbol,
