@@ -23049,13 +23049,11 @@ var Markets = (_temp = _class = function (_React$Component) {
         var market_symbol = void 0,
             underlying_symbol = void 0;
         var login_id = localStorage.getItem('active_loginid') ? localStorage.getItem('active_loginid') : 'logout';
-        // console.log('1', login_id);
         var market_symbol_pre = localStorage.getItem(login_id + '_selected_market');
         if (market_symbol_pre) {
             market_symbol = market_symbol_pre;
         } else {
             market_symbol = _defaults2.default.get('market');
-            // console.log('2', market_symbol);
         }
         _this.markets = _symbols2.default.markets();
 
@@ -23078,7 +23076,6 @@ var Markets = (_temp = _class = function (_React$Component) {
             });
             _defaults2.default.set('market', market_symbol);
         }
-        // console.log('3', underlying_symbol);
         _this.el_underlying = (0, _common_functions.getElementById)('underlying');
         _this.references = {};
         _this.state = {
@@ -23361,16 +23358,9 @@ var Markets = (_temp = _class = function (_React$Component) {
 
     this.onUnderlyingClick = function (underlying_symbol, market_symbol) {
 
-        // const login_id = localStorage.getItem('active_loginid');
         var login_id = localStorage.getItem('active_loginid') ? localStorage.getItem('active_loginid') : 'logout';
-        // if (login_id) {
-        // if (login_id === 'logout') {
         localStorage.setItem(login_id + '_selected_underlying', underlying_symbol);
         localStorage.setItem(login_id + '_selected_market', market_symbol);
-        // } else {
-        //    Defaults.set('underlying', underlying_symbol);
-        //    Defaults.set('market', market_symbol);
-        // }
         _this2.setState({
             market: {
                 symbol: market_symbol,
