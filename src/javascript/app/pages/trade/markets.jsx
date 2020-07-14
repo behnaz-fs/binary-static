@@ -70,7 +70,7 @@ class Markets extends React.Component {
         super(props);
         let market_symbol,
             underlying_symbol;
-        const login_id = localStorage.getItem('active_loginid') ? localStorage.getItem('active_loginid') : 'logout';
+        const login_id = localStorage.getItem('active_loginid') || 'logged_out';
         const market_symbol_pre = localStorage.getItem(`${login_id}_selected_market`);
         if (market_symbol_pre) {
             market_symbol = market_symbol_pre;
@@ -209,7 +209,7 @@ class Markets extends React.Component {
 
     onUnderlyingClick = (underlying_symbol, market_symbol) => {
         
-        const login_id = localStorage.getItem('active_loginid') ? localStorage.getItem('active_loginid') : 'logout';
+        const login_id = localStorage.getItem('active_loginid') || 'logged_out';
         localStorage.setItem(`${login_id}_selected_underlying`, underlying_symbol);
         localStorage.setItem(`${login_id}_selected_market`, market_symbol);
         this.setState({
