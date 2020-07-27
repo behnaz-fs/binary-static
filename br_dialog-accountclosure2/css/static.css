@@ -2191,7 +2191,7 @@ body #not_authenticated_financial ul.checked > li {
     height: 96px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-bottom: 1em; }
+    margin: 0.5em 0; }
   .account-closure #account-closure-dialog .warning-msg {
     line-height: 0.7; }
   .account-closure #account-closure-dialog .btn-size {
