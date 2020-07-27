@@ -2192,14 +2192,18 @@ body #not_authenticated_financial ul.checked > li {
     -o-object-fit: contain;
        object-fit: contain;
     margin-bottom: 1em; }
-  .account-closure #account-closure-dialog .red-msg {
+  .account-closure #account-closure-dialog #red-msg {
     color: #c03;
     font-weight: bold; }
-  .account-closure #account-closure-dialog .btn-size {
+  .account-closure #account-closure-dialog #btn-size {
+    width: 204px;
+    height: 38px; }
+  .account-closure #account-closure-dialog #btn-link-size {
+    display: inline-block;
     width: 204px;
     height: 38px; }
   .account-closure #account-closure-dialog .warning-msg {
-    line-height: 27px; }
+    line-height: 0.5; }
 
 .reason-textfield {
   border-color: #dedede;
