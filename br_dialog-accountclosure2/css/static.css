@@ -2175,7 +2175,7 @@ body #not_authenticated_financial ul.checked > li {
     width: 496px;
     height: 382px;
     border-radius: 4px;
-    background-color: #ffffff; }
+    background-color: #fff; }
   .account-closure #account-closure-dialog #ic-emergency {
     width: 96px;
     height: 96px;
@@ -2198,7 +2198,7 @@ body #not_authenticated_financial ul.checked > li {
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: #000;
     margin: 0.2em 0; }
 
 .reason-textfield {
