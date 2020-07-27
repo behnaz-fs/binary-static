@@ -28804,7 +28804,6 @@ var AccountClosure = function () {
 
         $(form_selector).on('submit', function (event) {
             event.preventDefault();
-            // console.log('here')
             $('#account-closure-dialog').css('display', 'flex');
         });
 
