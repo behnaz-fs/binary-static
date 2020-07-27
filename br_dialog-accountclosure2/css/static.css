@@ -2193,7 +2193,8 @@ body #not_authenticated_financial ul.checked > li {
        object-fit: contain;
     margin-bottom: 1em; }
   .account-closure #account-closure-dialog .red-msg {
-    color: #c03; }
+    color: #c03;
+    font-weight: bold; }
   .account-closure #account-closure-dialog .warning-msg {
     line-height: 1.5; }
 
