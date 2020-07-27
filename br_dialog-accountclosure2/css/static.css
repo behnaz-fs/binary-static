@@ -2170,7 +2170,28 @@ body #not_authenticated_financial ul.checked > li {
 
 .account-closure #account-closure-dialog {
   display: none;
-  left: 0; }
+  left: 0;
+  /* #warning {
+            font-size: 36px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $COLOR_ORANGE2;
+            margin: 0.5em 0;
+        }
+        .warning-msg {
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.5;
+            letter-spacing: normal;
+            text-align: center;
+            color: $COLOR_BLACK;
+            margin: 0.2em 0;
+        } */ }
   .account-closure #account-closure-dialog #account-closure-dialog-content {
     width: 496px;
     height: 382px;
@@ -2181,25 +2202,6 @@ body #not_authenticated_financial ul.checked > li {
     height: 96px;
     -o-object-fit: contain;
        object-fit: contain; }
-  .account-closure #account-closure-dialog #warning {
-    font-size: 36px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #e98024;
-    margin: 0.5em 0; }
-  .account-closure #account-closure-dialog .warning-msg {
-    font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin: 0.2em 0; }
 
 .reason-textfield {
   border-color: #dedede;
