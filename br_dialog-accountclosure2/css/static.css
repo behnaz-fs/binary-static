@@ -2201,7 +2201,10 @@ body #not_authenticated_financial ul.checked > li {
     width: 96px;
     height: 96px;
     -o-object-fit: contain;
-       object-fit: contain; }
+       object-fit: contain;
+    margin-bottom: 1em; }
+  .account-closure #account-closure-dialog .red-msg {
+    color: #c03; }
 
 .reason-textfield {
   border-color: #dedede;
