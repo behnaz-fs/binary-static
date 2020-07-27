@@ -2196,10 +2196,10 @@ body #not_authenticated_financial ul.checked > li {
     color: #c03;
     font-weight: bold; }
   .account-closure #account-closure-dialog .btn-size {
-    width: 80px;
-    height: 40px; }
+    width: 204px;
+    height: 38px; }
   .account-closure #account-closure-dialog .warning-msg {
-    line-height: 1.5; }
+    line-height: 27px; }
 
 .reason-textfield {
   border-color: #dedede;
