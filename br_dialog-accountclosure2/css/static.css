@@ -2172,7 +2172,7 @@ body #not_authenticated_financial ul.checked > li {
   left: 0; }
   .account-closure #account-closure-dialog #account-closure-dialog-content {
     width: 29rem;
-    height: 22.5rem;
+    height: 22.7rem;
     border-radius: 4px;
     background-color: #fff; }
   .account-closure #account-closure-dialog #ic-emergency {
@@ -2189,7 +2189,7 @@ body #not_authenticated_financial ul.checked > li {
   .account-closure #account-closure-dialog #span-btn {
     padding-right: 5rem;
     padding-left: 5rem; }
-    @media (max-width: 700px) {
+    @media (max-width: 500px) {
       .account-closure #account-closure-dialog #span-btn {
         margin-bottom: 10px;
         margin-left: 10px; } }
