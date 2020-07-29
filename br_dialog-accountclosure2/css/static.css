@@ -2191,6 +2191,7 @@ body #not_authenticated_financial ul.checked > li {
     padding-left: 83px; }
     @media (max-width: 700px) {
       .account-closure #account-closure-dialog #span-btn {
+        margin-top: 10px;
         margin-left: 10px; } }
   .account-closure #account-closure-dialog #red-msg {
     color: #c03;
