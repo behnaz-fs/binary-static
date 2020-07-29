@@ -28794,17 +28794,17 @@ var AccountClosure = function () {
             active: true
         });
         $('#back').on('click', function () {
-            return $('#account-closure-dialog').css('display', 'none');
+            return $('#account-closure-dialog').setVisibility(0);
         });
 
         $('#deativate').on('click', function () {
-            $('#account-closure-dialog').css('display', 'none');
+            $('#account-closure-dialog').setVisibility(0);
             submitForm();
         });
 
         $(form_selector).on('submit', function (event) {
             event.preventDefault();
-            $('#account-closure-dialog').css('display', 'flex');
+            $('#account-closure-dialog').setVisibility(1);
         });
 
         $txt_other_reason.setVisibility(0);
