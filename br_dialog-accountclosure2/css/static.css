@@ -2175,6 +2175,9 @@ body #not_authenticated_financial ul.checked > li {
     height: 22.7rem;
     border-radius: 4px;
     background-color: #fff; }
+    @media (max-width: 500px) {
+      .account-closure #account-closure-dialog #account-closure-dialog-content {
+        height: 18rem; } }
   .account-closure #account-closure-dialog #ic-emergency {
     width: 6rem;
     height: 6rem;
