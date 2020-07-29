@@ -2193,6 +2193,11 @@ body #not_authenticated_financial ul.checked > li {
   .account-closure #account-closure-dialog #red-msg {
     color: #c03;
     font-weight: bold; }
+  @media screen and (max-width: 700px) {
+    .account-closure #account-closure-dialog {
+      display: block;
+      margin: 10px !important;
+      border-bottom: 10px solid #c03; } }
 
 .reason-textfield {
   border-color: #dedede;
