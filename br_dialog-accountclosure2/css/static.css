@@ -2175,9 +2175,6 @@ body #not_authenticated_financial ul.checked > li {
     height: 22.7rem;
     border-radius: 4px;
     background-color: #fff; }
-    @media screen and (max-width: 500px) {
-      .account-closure #account-closure-dialog #account-closure-dialog-content {
-        height: 26rem; } }
   .account-closure #account-closure-dialog #ic-emergency {
     width: 6rem;
     height: 6rem;
@@ -2192,7 +2189,7 @@ body #not_authenticated_financial ul.checked > li {
   .account-closure #account-closure-dialog #span-btn {
     padding-right: 5rem;
     padding-left: 5rem; }
-    @media screen and (max-width: 500px) {
+    @media (max-width: 500px) {
       .account-closure #account-closure-dialog #span-btn {
         margin-bottom: 10px;
         margin-left: 10px; } }
