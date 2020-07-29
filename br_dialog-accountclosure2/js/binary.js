@@ -28793,18 +28793,19 @@ var AccountClosure = function () {
             collapsible: true,
             active: true
         });
+        var accountclose_dialog = $('#account-closure-dialog');
         $('#back').on('click', function () {
-            return $('#account-closure-dialog').css('display', 'none');
+            return accountclose_dialog.setVisibility(0);
         });
 
         $('#deativate').on('click', function () {
-            $('#account-closure-dialog').css('display', 'none');
+            accountclose_dialog.setVisibility(0);
             submitForm();
         });
 
         $(form_selector).on('submit', function (event) {
             event.preventDefault();
-            $('#account-closure-dialog').css('display', 'flex');
+            accountclose_dialog.setVisibility(1);
         });
 
         $txt_other_reason.setVisibility(0);
