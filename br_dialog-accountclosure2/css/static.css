@@ -2183,7 +2183,7 @@ body #not_authenticated_financial ul.checked > li {
        object-fit: contain;
     margin: 0.5em 0em; }
   .account-closure #account-closure-dialog .warning-msg {
-    line-height: 0.7; }
+    line-height: 0.7em; }
   .account-closure #account-closure-dialog .btn-size {
     width: 204px;
     height: 38px; }
@@ -2195,9 +2195,13 @@ body #not_authenticated_financial ul.checked > li {
     font-weight: bold; }
   @media screen and (max-width: 700px) {
     .account-closure #account-closure-dialog {
-      display: block;
       margin: 10px !important;
-      border-bottom: 10px solid #c03; } }
+      border-bottom: 10px solid #c03; }
+      .account-closure #account-closure-dialog .btn-size {
+        margin-top: 10px;
+        text-align: center; }
+      .account-closure #account-closure-dialog #back {
+        text-align: center; } }
 
 .reason-textfield {
   border-color: #dedede;
