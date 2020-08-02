@@ -28806,7 +28806,7 @@ var AccountClosure = function () {
 
         $(form_selector).on('submit', function (event) {
             event.preventDefault();
-            if (accountCloseValidation()) {
+            if (getReason()) {
                 $account_closure_dialog.setVisibility(1);
             }
         });
@@ -28833,13 +28833,6 @@ var AccountClosure = function () {
                 $error_msg.css('display', 'none');
             }
         });
-    };
-
-    var accountCloseValidation = function accountCloseValidation() {
-        if (getReason() === false) {
-            return false;
-        }
-        return true;
     };
 
     var submitForm = function submitForm() {
