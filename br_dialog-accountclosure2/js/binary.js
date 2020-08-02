@@ -28806,9 +28806,7 @@ var AccountClosure = function () {
 
         $(form_selector).on('submit', function (event) {
             event.preventDefault();
-            if (getReason()) {
-                $account_closure_dialog.setVisibility(1);
-            }
+            $account_closure_dialog.setVisibility(1);
         });
 
         $txt_other_reason.setVisibility(0);
