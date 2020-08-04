@@ -144,7 +144,7 @@ const Regulation = () => {
                             center
                             border='border-dark-gray'
                             image='images/pages/regulation/pdf-icon.svg'
-                            href={it.url_for('/download/BIEL_Pillar_3_Report_20200421.pdf')}
+                            href={it.url_for('/download/DIEL_Pillar_3_Report_20200421.pdf')}
                             target='_blank'
                             text={it.L('Pillar 3 disclosure report')}
                         />
@@ -169,9 +169,9 @@ const Regulation = () => {
                                 border='border-dark-gray'
                                 className='margin-top-17 align-start'
                                 image='images/pages/regulation/pdf-icon.svg'
-                                href={it.url_for('/download/BIEL-RTS28-for-2018.pdf')}
+                                href={it.url_for('/download/DIEL-RTS28-for-2018.pdf')}
                                 target='_blank'
-                                text={it.L('BIEL RTS28 for 2018')}
+                                text={it.L('DIEL RTS28 for 2018')}
                             />
                         </div>
                         <div className='gr-6 gr-12-m'>
@@ -181,9 +181,9 @@ const Regulation = () => {
                                 border='border-dark-gray'
                                 className='margin-top-17 align-start'
                                 image='images/pages/regulation/pdf-icon.svg'
-                                href={it.url_for('/download/BIEL-RTS28-for-2019.pdf')}
+                                href={it.url_for('/download/DIEL-RTS28-for-2019.pdf')}
                                 target='_blank'
-                                text={it.L('BIEL RTS28 for 2019')}
+                                text={it.L('DIEL RTS28 for 2019')}
                             />
                         </div>
                     </div>
