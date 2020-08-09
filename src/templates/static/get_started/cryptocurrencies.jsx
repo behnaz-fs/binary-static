@@ -18,7 +18,6 @@ const pointthree = '0.30%';
 const negten = '-10%';
 const negfifteen = '-15%';
 
-
 const Cryptocurrencies = () => (
     <div className='static_full get-started'>
         <h1>{it.L('MetaTrader 5')}</h1>
