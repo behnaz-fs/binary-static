@@ -134,7 +134,7 @@ const TermsAndConditions = () => (
                     <li>{it.L('If the client\'s [_1] account is closed, their MT5 Real Account will be automatically closed as well.', it.website_name)}</li>
                     <li>{it.L('Client\'s demo accounts will be deleted after 30 days of inactivity.')}</li>
                     <li>{it.L('Real accounts will be archived after 30 days of inactivity. To re-activate a real account, contact binary.com help desk at [_1]support@binary.com[_2]', '<a href="mailto:support@binary.com">', '</a>')}</li>
-                    <li>{it.L('If there are any pending funds in your MT5 account, it will be transferred to your Deriv account.')}</li>
+                    <li>{it.L('Any pending funds in your MT5 account will be transferred to your Deriv account.')}</li>
                 </ol>
             </li>
         </ol>
