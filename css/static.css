@@ -244,10 +244,10 @@
     .affiliate-ib-content .faq-message {
       color: #fff; }
 
-#forex-specs table td, #volatility-specs table td, #cash-specs table td {
+#forex-specs table td, #synthetic-specs table td, #cash-specs table td {
   font-size: 1rem;
   text-align: center; }
-  #forex-specs table td:first-child, #volatility-specs table td:first-child, #cash-specs table td:first-child {
+  #forex-specs table td:first-child, #synthetic-specs table td:first-child, #cash-specs table td:first-child {
     white-space: nowrap;
     font-size: inherit;
     text-align: left; }
@@ -1252,6 +1252,8 @@ div.kineticjs-content {
       background: url("../images/pages/contact/ticket-icon.svg") no-repeat center; }
     #content.contact-content #elevio_menu_container #elevio_element_menu ._elevio_module_icon_10 {
       display: none; }
+    #content.contact-content #elevio_menu_container #elevio_element_menu ._elevio_module_icon_20 ._d9ggd {
+      background: url("../images/pages/contact/chat-icon.svg") no-repeat center; }
   #content.contact-content .phone-container img {
     width: 70px;
     height: 70px; }
@@ -1548,21 +1550,6 @@ body #not_authenticated_financial ul.checked > li {
 
 .platforms-content h2 {
   line-height: 36px; }
-
-.platforms-content .beta {
-  position: relative;
-  top: -15px;
-  left: 5px;
-  background-color: #2a3052;
-  border-radius: 10px;
-  color: #fff;
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 400;
-  height: 16px;
-  line-height: 1.8;
-  text-align: center;
-  width: 34px; }
 
 .platforms-content .new:after {
   content: url("../images/pages/platforms/new_badge.svg");
@@ -2180,6 +2167,38 @@ body #not_authenticated_financial ul.checked > li {
 
 .account-closure .ui-accordion .ui-accordion-icons {
   padding-right: 1.2em; }
+
+.account-closure #account-closure-dialog {
+  left: 0; }
+  .account-closure #account-closure-dialog #account-closure-dialog-content {
+    width: 29rem;
+    height: 22.7rem;
+    border-radius: 4px;
+    background-color: #fff; }
+    @media (max-width: 500px) {
+      .account-closure #account-closure-dialog #account-closure-dialog-content {
+        height: unset; } }
+  .account-closure #account-closure-dialog #ic-emergency {
+    width: 6rem;
+    height: 6rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0.5em 0em; }
+  .account-closure #account-closure-dialog .warning-msg {
+    line-height: 0.7em; }
+  .account-closure #account-closure-dialog .btn-size {
+    width: 12.7rem;
+    height: 2.3rem; }
+  .account-closure #account-closure-dialog #span-btn {
+    padding-right: 5rem;
+    padding-left: 5rem; }
+    @media (max-width: 500px) {
+      .account-closure #account-closure-dialog #span-btn {
+        margin-bottom: 10px;
+        margin-left: 10px; } }
+  .account-closure #account-closure-dialog #red-msg {
+    color: #c03;
+    font-weight: bold; }
 
 .reason-textfield {
   border-color: #dedede;
