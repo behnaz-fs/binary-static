@@ -234,7 +234,7 @@ const Regulation = () => {
                             />
                         </div>
                         <div className='gr-6 gr-12-m gr-padding-30'>
-                            <h3>{it.L('Q3 2018')}</h3>
+                            <h3>{it.L('Q2 2020')}</h3>
                             <FillBox
                                 align_left
                                 center
